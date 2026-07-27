@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zawadzki Plumbing &amp; Heating — Warwick, RI</title>
+<meta name="description" content="Plumbing and heating in Warwick, Rhode Island. Water heater replacement and installation, repairs, and heating service across Kent County. Call (401) 739-9437.">
+<!-- Unpublished proposal. Must stay noindex until Zawadzki Plumbing & Heating owns it. -->
+<meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --ink:#0f1e30; --ink-2:#41505f; --line:#dde3ea;
+    --navy:#153452; --navy-lt:#eaf0f6;
+    --copper:#c2701f; --copper-dk:#9c5615; --copper-lt:#fbf1e6;
+    --paper:#fafbfc; --white:#fff;
+  }
+  html{scroll-behavior:smooth}
+  body{
+    font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink); background:var(--paper); -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+  /* ---------- proposal notice (removed when the site is bought) ---------- */
+  .preview-note{background:#fff8e6;border-bottom:1px solid #f0d9a0;color:#4a3c15;
+    font-size:.9rem;line-height:1.55}
+  .preview-note .wrap{padding:12px 24px}
+  .preview-note strong{color:#2c2308}
+  .pn-by{display:block;margin-top:4px;color:#8a7442;font-size:.82rem}
+
+  /* ---------- call bar ---------- */
+  .callbar{background:var(--ink);color:#fff;position:sticky;top:0;z-index:50}
+  .callbar .wrap{display:flex;align-items:center;justify-content:space-between;
+    gap:16px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+  .mark{font-weight:800;letter-spacing:-.02em;font-size:1.05rem;line-height:1.2}
+  .mark span{color:#e0a563;display:block;font-size:.72rem;font-weight:600;
+    letter-spacing:.1em;text-transform:uppercase;margin-top:2px}
+  .callbtn{
+    display:inline-flex;align-items:center;gap:9px;background:var(--copper);color:#fff;
+    font-weight:800;text-decoration:none;padding:11px 20px;border-radius:6px;
+    font-size:1.05rem;letter-spacing:-.01em;white-space:nowrap;
+  }
+  .callbtn:hover{background:#d47f2b}
+
+  /* ---------- hero ---------- */
+  .hero{background:var(--navy);color:#fff;padding:64px 0 72px;position:relative;
+    overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:5px;
+    background:linear-gradient(90deg,var(--copper) 0 40%,#25455f 40% 100%)}
+  .eyebrow{color:#8fb6d6;font-weight:700;font-size:.82rem;letter-spacing:.14em;
+    text-transform:uppercase;margin-bottom:18px}
+  h1{font-size:clamp(2.1rem,5.4vw,3.5rem);line-height:1.08;letter-spacing:-.03em;
+    font-weight:800;max-width:18ch}
+  .hero p{margin-top:20px;font-size:1.15rem;max-width:54ch;color:#c6d6e3}
+  .hero .actions{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .ghost{color:#fff;text-decoration:none;font-weight:600;border:1.5px solid #416481;
+    padding:11px 20px;border-radius:6px}
+  .ghost:hover{border-color:#e0a563;color:#e0a563}
+
+  /* ---------- trust ---------- */
+  .trust{background:var(--white);border-bottom:1px solid var(--line)}
+  .trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line);padding:0}
+  .tcell{background:var(--white);padding:26px 24px;text-align:center}
+  .tcell b{display:block;font-size:1.45rem;letter-spacing:-.02em;line-height:1.2}
+  .tcell small{display:block;color:var(--ink-2);font-size:.86rem;margin-top:5px}
+  .stars{color:var(--copper);letter-spacing:2px}
+
+  /* ---------- sections ---------- */
+  section{padding:68px 0}
+  h2{font-size:clamp(1.5rem,3vw,2.05rem);letter-spacing:-.025em;font-weight:800;
+    margin-bottom:12px}
+  .lede{color:var(--ink-2);max-width:62ch;font-size:1.05rem}
+
+  /* ---------- the big job ---------- */
+  .headline-job{background:var(--white);border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line)}
+  .hj{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:center}
+  .hj-card{background:var(--copper-lt);border:1px solid #eeddc6;border-radius:12px;
+    padding:32px}
+  .hj-card .tag{color:var(--copper-dk);font-weight:800;font-size:.75rem;
+    letter-spacing:.13em;text-transform:uppercase}
+  .hj-card h3{font-size:1.3rem;margin:10px 0 12px;letter-spacing:-.02em}
+  .hj-card p{color:var(--ink-2);font-size:.99rem}
+  .hj-card .brands{margin-top:20px;padding-top:18px;border-top:1px solid #eeddc6;
+    color:var(--ink-2);font-size:.92rem}
+  .hj-card .brands b{color:var(--ink)}
+
+  /* ---------- services ---------- */
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));
+    gap:20px;margin-top:38px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;
+    padding:28px 26px}
+  .card .num{color:var(--copper);font-weight:800;font-size:.8rem;letter-spacing:.12em}
+  .card h3{font-size:1.16rem;margin:10px 0 9px;letter-spacing:-.015em}
+  .card p{color:var(--ink-2);font-size:.97rem}
+
+  .area{background:var(--navy-lt);border-top:1px solid var(--line)}
+  .towns{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+  .towns span{border:1px solid #cfdce8;border-radius:100px;padding:7px 16px;
+    font-size:.93rem;color:var(--ink-2);background:var(--white)}
+
+  /* ---------- contact ---------- */
+  .contact{background:var(--ink);color:#fff}
+  .contact h2{color:#fff}
+  .contact .lede{color:#c6d6e3}
+  .bignum{display:inline-block;margin-top:26px;font-size:clamp(2rem,6vw,3.1rem);
+    font-weight:800;letter-spacing:-.03em;color:#e0a563;text-decoration:none}
+  .bignum:hover{color:#f0bb80}
+  .addr{margin-top:20px;color:#c6d6e3;font-size:1.02rem;line-height:1.9}
+
+  footer{background:#091524;color:#748699;font-size:.88rem;padding:26px 0}
+  footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+  @media (max-width:860px){ .hj{grid-template-columns:1fr;gap:32px} }
+  @media (max-width:760px){
+    .trust .wrap{grid-template-columns:1fr}
+    section{padding:52px 0}
+    .hero{padding:48px 0 56px}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-note">
+  <div class="wrap">
+    <strong>This is a proposal, not a live website.</strong>
+    We built it for Zawadzki Plumbing &amp; Heating because you have 39 reviews and
+    nowhere to send anyone. It is hidden from Google and nobody sees it unless you send
+    them the link. If you want it, it becomes yours — <strong>$249, once</strong>, no
+    monthly fee. If you do not, tell us and we will take it down.
+    <span class="pn-by">Built by Curbside, a service of Atlas Inc.</span>
+  </div>
+</div>
+
+<div class="callbar">
+  <div class="wrap">
+    <div class="mark">ZAWADZKI<span>Plumbing &amp; Heating</span></div>
+    <a class="callbtn" href="tel:+14017399437">📞 (401) 739-9437</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Warwick, Rhode Island</div>
+    <h1>Heat and hot water are not a wait-and-see problem.</h1>
+    <p>Zawadzki Plumbing &amp; Heating is a small Warwick shop covering plumbing and
+       heating across Kent County. Water heaters, repairs, and the kind of work that
+       cannot wait until Monday.</p>
+    <div class="actions">
+      <a class="callbtn" href="tel:+14017399437">Call (401) 739-9437</a>
+      <a class="ghost" href="#services">What we do</a>
+    </div>
+  </div>
+</header>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="tcell">
+      <b class="stars">★★★★★</b>
+      <small><strong>4.9</strong> across 39 Google reviews</small>
+    </div>
+    <div class="tcell">
+      <b>Plumbing &amp; Heating</b>
+      <small>Both trades, one shop</small>
+    </div>
+    <div class="tcell">
+      <b>West Shore Road</b>
+      <small>Warwick based, Kent County served</small>
+    </div>
+  </div>
+</div>
+
+<section class="headline-job">
+  <div class="wrap hj">
+    <div>
+      <h2>Water heaters</h2>
+      <p class="lede">The one that turns into an emergency at six in the morning. A
+         water heater usually gives you a warning first — longer recovery, rust in the
+         hot side, a puddle that was not there last week — and replacing it on a
+         Tuesday costs less trouble than replacing it on a Sunday.</p>
+      <p class="lede" style="margin-top:16px">We pull the old unit, set the new one,
+         handle the venting and the connections, and take the old tank with us.</p>
+    </div>
+    <div class="hj-card">
+      <div class="tag">Installed &amp; serviced</div>
+      <h3>Replacement and repair</h3>
+      <p>Gas and electric tank water heaters — sized for the house, installed to code,
+         and hauled away when we are done.</p>
+      <div class="brands">
+        Listed installer for <b>American Water Heater</b> and <b>A.&nbsp;O.&nbsp;Smith</b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <p class="lede">Residential plumbing and heating, handled by the people who
+       answer the phone.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="num">01</div>
+        <h3>Plumbing repairs</h3>
+        <p>Leaks, running and failing toilets, faucets, drains, shutoffs, and the
+           supply lines behind them. Fixed properly rather than tightened and hoped
+           about.</p>
+      </div>
+      <div class="card">
+        <div class="num">02</div>
+        <h3>Heating service</h3>
+        <p>Boilers, baseboard, radiators, and the pipework that feeds them. Rhode
+           Island heating systems are old, and old is fine as long as somebody who
+           knows them is looking after it.</p>
+      </div>
+      <div class="card">
+        <div class="num">03</div>
+        <h3>Fixtures and replacements</h3>
+        <p>Sinks, tubs, toilets, valves, and hose bibs — swapped out during a
+           renovation or replaced when the old one has finally had enough.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="area">
+  <div class="wrap">
+    <h2>Where we work</h2>
+    <p class="lede">Based on West Shore Road in Warwick, covering Kent County and the
+       surrounding towns. Not sure whether you are in range? Call and ask.</p>
+    <div class="towns">
+      <span>Warwick</span><span>West Warwick</span><span>East Greenwich</span>
+      <span>Coventry</span><span>Cranston</span><span>North Kingstown</span>
+      <span>Apponaug</span><span>Conimicut</span><span>Oakland Beach</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <h2>Call the shop</h2>
+    <p class="lede">Describe what it is doing and we will tell you whether it is a
+       today problem or a this-week problem — and what it will take to fix it.</p>
+    <a class="bignum" href="tel:+14017399437">(401) 739-9437</a>
+    <div class="addr">
+      <strong style="color:#fff">Zawadzki Plumbing &amp; Heating</strong><br>
+      834 W Shore Rd, Warwick, RI 02889
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© Zawadzki Plumbing &amp; Heating — Warwick, Rhode Island</div>
+    <div>Plumbing · Heating · Water heaters · (401) 739-9437</div>
+  </div>
+</footer>
+
+</body>
+</html>
