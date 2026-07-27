@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lemay Electric LLC — Master Electrician in Cranston, RI</title>
+<meta name="description" content="Family owned and operated electrical contractor in Cranston, Rhode Island. Residential wiring, panel upgrades, and standby generator installation. Call (401) 595-6009.">
+<!-- Unpublished proposal. Must stay noindex until Lemay Electric owns it. -->
+<meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --ink:#14171c; --ink-2:#3d444f; --line:#e2e5ea;
+    --amber:#f0a500; --amber-dk:#c98700; --paper:#fbfbfa; --white:#fff;
+  }
+  html{scroll-behavior:smooth}
+  body{
+    font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink); background:var(--paper); -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+  /* ---------- proposal notice (removed when the site is bought) ---------- */
+  .preview-note{background:#fff8e6;border-bottom:1px solid #f0d9a0;color:#4a3c15;
+    font-size:.9rem;line-height:1.55}
+  .preview-note .wrap{padding:12px 24px}
+  .preview-note strong{color:#2c2308}
+  .pn-by{display:block;margin-top:4px;color:#8a7442;font-size:.82rem}
+
+  /* ---------- call bar ---------- */
+  .callbar{background:var(--ink);color:#fff;position:sticky;top:0;z-index:50}
+  .callbar .wrap{display:flex;align-items:center;justify-content:space-between;
+    gap:16px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+  .mark{font-weight:800;letter-spacing:-.02em;font-size:1.05rem}
+  .mark span{color:var(--amber)}
+  .callbtn{
+    display:inline-flex;align-items:center;gap:9px;background:var(--amber);color:#1a1200;
+    font-weight:800;text-decoration:none;padding:11px 20px;border-radius:6px;
+    font-size:1.05rem;letter-spacing:-.01em;white-space:nowrap;
+  }
+  .callbtn:hover{background:#ffb919}
+
+  /* ---------- hero ---------- */
+  .hero{background:var(--ink);color:#fff;padding:64px 0 72px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:5px;
+    background:linear-gradient(90deg,var(--amber) 0 33%,#2a2f38 33% 100%)}
+  .eyebrow{color:var(--amber);font-weight:700;font-size:.82rem;letter-spacing:.14em;
+    text-transform:uppercase;margin-bottom:18px}
+  h1{font-size:clamp(2.1rem,5.4vw,3.6rem);line-height:1.08;letter-spacing:-.03em;
+    font-weight:800;max-width:16ch}
+  .hero p{margin-top:20px;font-size:1.15rem;max-width:52ch;color:#c8cdd6}
+  .hero .actions{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .ghost{color:#fff;text-decoration:none;font-weight:600;border:1.5px solid #4a515d;
+    padding:11px 20px;border-radius:6px}
+  .ghost:hover{border-color:var(--amber);color:var(--amber)}
+
+  /* ---------- trust ---------- */
+  .trust{background:var(--white);border-bottom:1px solid var(--line)}
+  .trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line);padding:0}
+  .tcell{background:var(--white);padding:26px 24px;text-align:center}
+  .tcell b{display:block;font-size:1.5rem;letter-spacing:-.02em;line-height:1.2}
+  .tcell small{display:block;color:var(--ink-2);font-size:.86rem;margin-top:5px}
+  .stars{color:var(--amber);letter-spacing:2px}
+
+  /* ---------- sections ---------- */
+  section{padding:68px 0}
+  h2{font-size:clamp(1.5rem,3vw,2.05rem);letter-spacing:-.025em;font-weight:800;
+    margin-bottom:12px}
+  .lede{color:var(--ink-2);max-width:60ch;font-size:1.05rem}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+    gap:20px;margin-top:38px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:10px;
+    padding:28px 26px}
+  .card .num{color:var(--amber);font-weight:800;font-size:.8rem;letter-spacing:.12em}
+  .card h3{font-size:1.18rem;margin:10px 0 9px;letter-spacing:-.015em}
+  .card p{color:var(--ink-2);font-size:.97rem}
+
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .who{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:30px}
+  .who h3{font-size:1.1rem;margin-bottom:10px}
+  .who p{color:var(--ink-2);font-size:.97rem}
+  .who + .who{margin-top:18px}
+
+  .area{background:var(--white);border-top:1px solid var(--line)}
+  .towns{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+  .towns span{border:1px solid var(--line);border-radius:100px;padding:7px 16px;
+    font-size:.93rem;color:var(--ink-2);background:var(--paper)}
+
+  /* ---------- contact ---------- */
+  .contact{background:var(--ink);color:#fff}
+  .contact h2{color:#fff}
+  .contact .lede{color:#c8cdd6}
+  .bignum{display:inline-block;margin-top:26px;font-size:clamp(2rem,6vw,3.1rem);
+    font-weight:800;letter-spacing:-.03em;color:var(--amber);text-decoration:none}
+  .bignum:hover{color:#ffb919}
+  .addr{margin-top:20px;color:#c8cdd6;font-size:1.02rem;line-height:1.9}
+
+  footer{background:#0d1015;color:#7f8895;font-size:.88rem;padding:26px 0}
+  footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+  @media (max-width:760px){
+    .split{grid-template-columns:1fr;gap:34px}
+    .trust .wrap{grid-template-columns:1fr}
+    section{padding:52px 0}
+    .hero{padding:48px 0 56px}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-note">
+  <div class="wrap">
+    <strong>This is a proposal, not a live website.</strong>
+    We built it for Lemay Electric because you have 47 reviews and nowhere to send
+    anyone. It is hidden from Google and nobody sees it unless you send them the link.
+    If you want it, it becomes yours — <strong>$249, once</strong>, no monthly fee.
+    If you do not, tell us and we will take it down.
+    <span class="pn-by">Built by Curbside, a service of Atlas Inc.</span>
+  </div>
+</div>
+
+<div class="callbar">
+  <div class="wrap">
+    <div class="mark">LEMAY <span>ELECTRIC</span></div>
+    <a class="callbtn" href="tel:+14015956009">📞 (401) 595-6009</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Cranston, Rhode Island</div>
+    <h1>A master electrician who picks up the phone.</h1>
+    <p>Lemay Electric is a family owned and operated electrical contractor serving
+       homeowners and contractors across the Cranston and Providence area. Residential
+       wiring, panel upgrades, and standby generator installation.</p>
+    <div class="actions">
+      <a class="callbtn" href="tel:+14015956009">Call (401) 595-6009</a>
+      <a class="ghost" href="#services">What we do</a>
+    </div>
+  </div>
+</header>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="tcell">
+      <b class="stars">★★★★★</b>
+      <small><strong>4.9</strong> across 47 Google reviews</small>
+    </div>
+    <div class="tcell">
+      <b>Master Electrician</b>
+      <small>Licensed electrical contractor</small>
+    </div>
+    <div class="tcell">
+      <b>Family Owned</b>
+      <small>Owned and operated by the Lemay family</small>
+    </div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <p class="lede">Straightforward residential and light commercial electrical work,
+       done to code and done once.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="num">01</div>
+        <h3>Residential wiring</h3>
+        <p>New circuits, rewiring, lighting, switches, and outlets — for renovations,
+           additions, and older Rhode Island homes that were never wired for how we
+           live now.</p>
+      </div>
+      <div class="card">
+        <div class="num">02</div>
+        <h3>Panel upgrades</h3>
+        <p>If your panel still has fuses, trips when the dryer and the microwave run
+           together, or has no room left for another breaker, it is undersized for the
+           house. We replace it properly and pull the permit.</p>
+      </div>
+      <div class="card">
+        <div class="num">03</div>
+        <h3>Standby generators</h3>
+        <p>Whole-home air-cooled standby generator installation, including the transfer
+           switch and the electrical work behind it, so the house comes back on by
+           itself when the street goes dark.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--white);border-top:1px solid var(--line)">
+  <div class="wrap split">
+    <div>
+      <h2>Who we work for</h2>
+      <p class="lede">Two very different customers, and we are set up for both.</p>
+    </div>
+    <div>
+      <div class="who">
+        <h3>Homeowners</h3>
+        <p>You want someone licensed who shows up when he says he will, explains what
+           the problem actually is, and leaves the work safe. Call the number above and
+           you will talk to an electrician, not a call center.</p>
+      </div>
+      <div class="who">
+        <h3>Contractors</h3>
+        <p>We work as the electrical sub on renovations and builds — scheduled around
+           your trades, inspection-ready, and finished on the date we gave you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="area">
+  <div class="wrap">
+    <h2>Where we work</h2>
+    <p class="lede">Based on Vermont Street in Cranston, working across the greater
+       Providence area. If you are not sure whether you are in range, call and ask.</p>
+    <div class="towns">
+      <span>Cranston</span><span>Providence</span><span>Warwick</span>
+      <span>Johnston</span><span>West Warwick</span><span>East Greenwich</span>
+      <span>North Providence</span><span>Coventry</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <h2>Get it looked at</h2>
+    <p class="lede">Electrical problems do not improve on their own, and most of them
+       are cheaper to fix before they become urgent.</p>
+    <a class="bignum" href="tel:+14015956009">(401) 595-6009</a>
+    <div class="addr">
+      <strong style="color:#fff">Lemay Electric LLC</strong><br>
+      86 Vermont St, Cranston, RI 02920
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© Lemay Electric LLC — Cranston, Rhode Island</div>
+    <div>Licensed electrical contractor · (401) 595-6009</div>
+  </div>
+</footer>
+
+</body>
+</html>
