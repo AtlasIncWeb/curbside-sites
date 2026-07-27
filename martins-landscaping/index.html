@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Martins Landscaping &amp; Dumpster Rentals — Warwick, RI</title>
+<meta name="description" content="Landscaping, lawn maintenance, spring and fall cleanups, dumpster rental, junk removal, and light demolition in Warwick, Rhode Island. Call (401) 525-6408.">
+<!-- Unpublished proposal. Must stay noindex until Martins Landscaping owns it. -->
+<meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --ink:#16201a; --ink-2:#41504a; --line:#dfe4de;
+    --green:#2f6b3f; --green-dk:#1f4a2c; --green-lt:#eaf1eb;
+    --sun:#d8842a; --sun-lt:#fdf3e7;
+    --paper:#faf9f5; --white:#fff;
+  }
+  html{scroll-behavior:smooth}
+  body{
+    font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink); background:var(--paper); -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+  /* ---------- proposal notice (removed when the site is bought) ---------- */
+  .preview-note{background:#fff8e6;border-bottom:1px solid #f0d9a0;color:#4a3c15;
+    font-size:.9rem;line-height:1.55}
+  .preview-note .wrap{padding:12px 24px}
+  .preview-note strong{color:#2c2308}
+  .pn-by{display:block;margin-top:4px;color:#8a7442;font-size:.82rem}
+
+  /* ---------- call bar ---------- */
+  .callbar{background:var(--ink);color:#fff;position:sticky;top:0;z-index:50}
+  .callbar .wrap{display:flex;align-items:center;justify-content:space-between;
+    gap:16px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+  .mark{font-weight:800;letter-spacing:-.02em;font-size:1.05rem;line-height:1.2}
+  .mark span{color:#8fc79c;display:block;font-size:.72rem;font-weight:600;
+    letter-spacing:.1em;text-transform:uppercase;margin-top:2px}
+  .callbtn{
+    display:inline-flex;align-items:center;gap:9px;background:var(--sun);color:#26150a;
+    font-weight:800;text-decoration:none;padding:11px 20px;border-radius:6px;
+    font-size:1.05rem;letter-spacing:-.01em;white-space:nowrap;
+  }
+  .callbtn:hover{background:#ec9840}
+
+  /* ---------- hero ---------- */
+  .hero{background:var(--green-dk);color:#fff;padding:64px 0 72px;position:relative;
+    overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:5px;
+    background:linear-gradient(90deg,var(--green) 0 55%,var(--sun) 55% 100%)}
+  .eyebrow{color:#9ad2a8;font-weight:700;font-size:.82rem;letter-spacing:.14em;
+    text-transform:uppercase;margin-bottom:18px}
+  h1{font-size:clamp(2.1rem,5.4vw,3.5rem);line-height:1.08;letter-spacing:-.03em;
+    font-weight:800;max-width:19ch}
+  .hero p{margin-top:20px;font-size:1.15rem;max-width:54ch;color:#cddfd2}
+  .hero .actions{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .ghost{color:#fff;text-decoration:none;font-weight:600;border:1.5px solid #4d7159;
+    padding:11px 20px;border-radius:6px}
+  .ghost:hover{border-color:#9ad2a8;color:#9ad2a8}
+
+  /* ---------- trust ---------- */
+  .trust{background:var(--white);border-bottom:1px solid var(--line)}
+  .trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line);padding:0}
+  .tcell{background:var(--white);padding:26px 24px;text-align:center}
+  .tcell b{display:block;font-size:1.45rem;letter-spacing:-.02em;line-height:1.2}
+  .tcell small{display:block;color:var(--ink-2);font-size:.86rem;margin-top:5px}
+  .stars{color:var(--sun);letter-spacing:2px}
+
+  /* ---------- sections ---------- */
+  section{padding:68px 0}
+  h2{font-size:clamp(1.5rem,3vw,2.05rem);letter-spacing:-.025em;font-weight:800;
+    margin-bottom:12px}
+  .lede{color:var(--ink-2);max-width:62ch;font-size:1.05rem}
+
+  /* ---------- the two sides ---------- */
+  .sides{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+  .side{border-radius:12px;padding:34px 32px;border:1px solid var(--line)}
+  .side.a{background:var(--green-lt);border-color:#cadfce}
+  .side.b{background:var(--sun-lt);border-color:#f0dcc0}
+  .side .tag{font-weight:800;font-size:.75rem;letter-spacing:.13em;text-transform:uppercase}
+  .side.a .tag{color:var(--green)}
+  .side.b .tag{color:#a8601a}
+  .side h3{font-size:1.35rem;margin:10px 0 12px;letter-spacing:-.02em}
+  .side p{color:var(--ink-2);font-size:.99rem}
+  .side ul{list-style:none;margin-top:18px}
+  .side li{padding:9px 0 9px 26px;position:relative;border-top:1px solid rgba(0,0,0,.07);
+    font-size:.98rem}
+  .side li::before{content:"";position:absolute;left:4px;top:16px;width:9px;height:9px;
+    border-radius:2px}
+  .side.a li::before{background:var(--green)}
+  .side.b li::before{background:var(--sun)}
+
+  /* ---------- quote ---------- */
+  .said{background:var(--white);border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line)}
+  .said blockquote{font-size:clamp(1.15rem,2.6vw,1.5rem);line-height:1.5;
+    letter-spacing:-.02em;max-width:44ch;font-weight:600}
+  .said .attrib{margin-top:18px;color:var(--ink-2);font-size:.93rem}
+
+  .area{background:var(--paper)}
+  .towns{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+  .towns span{border:1px solid var(--line);border-radius:100px;padding:7px 16px;
+    font-size:.93rem;color:var(--ink-2);background:var(--white)}
+
+  /* ---------- contact ---------- */
+  .contact{background:var(--ink);color:#fff}
+  .contact h2{color:#fff}
+  .contact .lede{color:#c2cfc6}
+  .bignum{display:inline-block;margin-top:26px;font-size:clamp(2rem,6vw,3.1rem);
+    font-weight:800;letter-spacing:-.03em;color:var(--sun);text-decoration:none}
+  .bignum:hover{color:#ec9840}
+  .addr{margin-top:20px;color:#c2cfc6;font-size:1.02rem;line-height:1.9}
+
+  footer{background:#0c130e;color:#79877e;font-size:.88rem;padding:26px 0}
+  footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+  @media (max-width:760px){
+    .sides{grid-template-columns:1fr}
+    .trust .wrap{grid-template-columns:1fr}
+    section{padding:52px 0}
+    .hero{padding:48px 0 56px}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-note">
+  <div class="wrap">
+    <strong>This is a proposal, not a live website.</strong>
+    We built it for Martins Landscaping because you have 32 reviews and nowhere to send
+    anyone. It is hidden from Google and nobody sees it unless you send them the link.
+    If you want it, it becomes yours — <strong>$249, once</strong>, no monthly fee.
+    If you do not, tell us and we will take it down.
+    <span class="pn-by">Built by Curbside, a service of Atlas Inc.</span>
+  </div>
+</div>
+
+<div class="callbar">
+  <div class="wrap">
+    <div class="mark">MARTINS<span>Landscaping &amp; Dumpster Rentals</span></div>
+    <a class="callbtn" href="tel:+14015256408">📞 (401) 525-6408</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Warwick, Rhode Island</div>
+    <h1>Yard work and a dumpster, from the same phone number.</h1>
+    <p>Martins handles the lawn and the cleanout. Weekly mowing, spring and fall
+       cleanups, landscaping — and when a job makes a pile, we drop a dumpster and
+       take the pile away.</p>
+    <div class="actions">
+      <a class="callbtn" href="tel:+14015256408">Call (401) 525-6408</a>
+      <a class="ghost" href="#services">What we do</a>
+    </div>
+  </div>
+</header>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="tcell">
+      <b class="stars">★★★★★</b>
+      <small><strong>4.8</strong> across 32 Google reviews</small>
+    </div>
+    <div class="tcell">
+      <b>Warwick Based</b>
+      <small>Wood Street — we are down the road</small>
+    </div>
+    <div class="tcell">
+      <b>One Call, Both Jobs</b>
+      <small>Landscaping and dumpsters together</small>
+    </div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>Two sides of the same truck</h2>
+    <p class="lede">Most people find us for one and end up using both. A spring cleanup
+       fills a dumpster. A demo job leaves a yard that needs putting back. Doing both
+       means one crew, one schedule, and one number to call.</p>
+
+    <div class="sides">
+      <div class="side a">
+        <div class="tag">Side one</div>
+        <h3>Landscaping &amp; lawn care</h3>
+        <p>Keeping a Rhode Island property looking looked-after, from the first thaw
+           through the last leaf.</p>
+        <ul>
+          <li>Weekly and biweekly lawn maintenance</li>
+          <li>Spring cleanups — winter debris, thatch, first cut</li>
+          <li>Fall cleanups — leaves, beds, cut back and hauled off</li>
+          <li>Landscaping and grounds work</li>
+          <li>Mulch, edging, and bed maintenance</li>
+        </ul>
+      </div>
+
+      <div class="side b">
+        <div class="tag">Side two</div>
+        <h3>Dumpsters &amp; cleanouts</h3>
+        <p>Roll-off dumpster rental for the projects that make more mess than a truck
+           bed can hold.</p>
+        <ul>
+          <li>Dumpster rental, dropped and picked up</li>
+          <li>Junk removal — garage, basement, attic, estate</li>
+          <li>Light demolition — sheds, decks, interior tear-out</li>
+          <li>Construction and renovation debris</li>
+          <li>Yard waste and storm cleanup</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="said">
+  <div class="wrap">
+    <blockquote>“Our crew has years of experience in the industry and knows what it
+      takes to complete projects properly and efficiently.”</blockquote>
+    <div class="attrib">— Martins Landscaping &amp; Dumpster Rentals, in their own words</div>
+  </div>
+</section>
+
+<section class="area">
+  <div class="wrap">
+    <h2>Where we work</h2>
+    <p class="lede">Based on Wood Street in Warwick, working across Kent County and the
+       greater Providence area. If you are not sure whether you are in range, call and
+       ask — it is a short conversation.</p>
+    <div class="towns">
+      <span>Warwick</span><span>West Warwick</span><span>East Greenwich</span>
+      <span>Coventry</span><span>Cranston</span><span>Providence</span>
+      <span>North Kingstown</span><span>Apponaug</span><span>Hoxsie</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <h2>Get it on the schedule</h2>
+    <p class="lede">Tell us what the property needs and whether it is going to make a
+       pile. We will tell you what it costs and when we can be there.</p>
+    <a class="bignum" href="tel:+14015256408">(401) 525-6408</a>
+    <div class="addr">
+      <strong style="color:#fff">Martins Landscaping &amp; Dumpster Rentals</strong><br>
+      128 Wood St, Warwick, RI 02889
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© Martins Landscaping &amp; Dumpster Rentals — Warwick, Rhode Island</div>
+    <div>Landscaping · Dumpster rental · Junk removal · (401) 525-6408</div>
+  </div>
+</footer>
+
+</body>
+</html>
