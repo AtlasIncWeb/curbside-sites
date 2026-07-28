@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cmags HVAC — Heating &amp; Cooling in Warwick, RI</title>
+<meta name="description" content="Family owned and operated heating and cooling in Warwick, Rhode Island. Furnaces, air conditioning, heat pumps, and ductless mini-split installation and repair across Rhode Island. Call (401) 262-4433.">
+<!-- Unpublished proposal. Must stay noindex until Cmags HVAC owns it. -->
+<meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --ink:#0d1826; --ink-2:#3c4a5a; --line:#dde3ea;
+    --cool:#0e5a9c; --cool-dk:#0a3f6e; --cool-lt:#e9f1f9;
+    --warm:#e2622b; --warm-dk:#bd4c19; --warm-lt:#fdefe6;
+    --paper:#fafbfc; --white:#fff;
+  }
+  html{scroll-behavior:smooth}
+  body{
+    font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink); background:var(--paper); -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+  /* ---------- proposal notice (removed when the site is bought) ---------- */
+  .preview-note{background:#fff8e6;border-bottom:1px solid #f0d9a0;color:#4a3c15;
+    font-size:.9rem;line-height:1.55}
+  .preview-note .wrap{padding:12px 24px}
+  .preview-note strong{color:#2c2308}
+  .pn-by{display:block;margin-top:4px;color:#8a7442;font-size:.82rem}
+
+  /* ---------- call bar ---------- */
+  .callbar{background:var(--ink);color:#fff;position:sticky;top:0;z-index:50}
+  .callbar .wrap{display:flex;align-items:center;justify-content:space-between;
+    gap:16px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+  .mark{font-weight:800;letter-spacing:-.02em;font-size:1.05rem;line-height:1.2}
+  .mark span{color:#e0a563;display:block;font-size:.72rem;font-weight:600;
+    letter-spacing:.1em;text-transform:uppercase;margin-top:2px}
+  .callbtn{
+    display:inline-flex;align-items:center;gap:9px;background:var(--warm);color:#fff;
+    font-weight:800;text-decoration:none;padding:11px 20px;border-radius:6px;
+    font-size:1.05rem;letter-spacing:-.01em;white-space:nowrap;
+  }
+  .callbtn:hover{background:#f0703a}
+
+  /* ---------- hero ---------- */
+  .hero{background:linear-gradient(160deg,var(--cool-dk) 0%,var(--cool) 100%);
+    color:#fff;padding:64px 0 72px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:5px;
+    background:linear-gradient(90deg,var(--cool) 0 50%,var(--warm) 50% 100%)}
+  .eyebrow{color:#9fc6e6;font-weight:700;font-size:.82rem;letter-spacing:.14em;
+    text-transform:uppercase;margin-bottom:18px}
+  h1{font-size:clamp(2.1rem,5.4vw,3.5rem);line-height:1.08;letter-spacing:-.03em;
+    font-weight:800;max-width:17ch}
+  .hero p{margin-top:20px;font-size:1.15rem;max-width:54ch;color:#d3e4f1}
+  .hero .actions{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .ghost{color:#fff;text-decoration:none;font-weight:600;border:1.5px solid #4d7fa6;
+    padding:11px 20px;border-radius:6px}
+  .ghost:hover{border-color:#fff;color:#fff;background:rgba(255,255,255,.08)}
+
+  /* ---------- trust ---------- */
+  .trust{background:var(--white);border-bottom:1px solid var(--line)}
+  .trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line);padding:0}
+  .tcell{background:var(--white);padding:26px 24px;text-align:center}
+  .tcell b{display:block;font-size:1.45rem;letter-spacing:-.02em;line-height:1.2}
+  .tcell small{display:block;color:var(--ink-2);font-size:.86rem;margin-top:5px}
+  .stars{color:var(--warm);letter-spacing:2px}
+
+  /* ---------- sections ---------- */
+  section{padding:68px 0}
+  h2{font-size:clamp(1.5rem,3vw,2.05rem);letter-spacing:-.025em;font-weight:800;
+    margin-bottom:12px}
+  .lede{color:var(--ink-2);max-width:62ch;font-size:1.05rem}
+
+  /* ---------- hot & cold split ---------- */
+  .seasons{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+  .season{border-radius:12px;padding:32px;border:1px solid var(--line)}
+  .season.cool{background:var(--cool-lt);border-color:#cfe1f0}
+  .season.warm{background:var(--warm-lt);border-color:#f2d9c8}
+  .season .tag{font-weight:800;font-size:.75rem;letter-spacing:.13em;
+    text-transform:uppercase}
+  .season.cool .tag{color:var(--cool)}
+  .season.warm .tag{color:var(--warm-dk)}
+  .season h3{font-size:1.3rem;margin:10px 0 10px;letter-spacing:-.02em}
+  .season p{color:var(--ink-2);font-size:.98rem}
+  .season ul{list-style:none;margin-top:16px}
+  .season li{padding:8px 0 8px 24px;position:relative;border-top:1px solid rgba(0,0,0,.06);
+    font-size:.97rem}
+  .season li::before{content:"";position:absolute;left:2px;top:15px;width:9px;height:9px;
+    border-radius:50%}
+  .season.cool li::before{background:var(--cool)}
+  .season.warm li::before{background:var(--warm)}
+
+  /* ---------- mini-split feature ---------- */
+  .feature{background:var(--white);border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line)}
+  .feat{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .feat .badge{display:inline-block;background:var(--cool-lt);color:var(--cool-dk);
+    font-weight:800;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    padding:6px 12px;border-radius:100px}
+  .feat h2{margin-top:14px}
+
+  .area{background:var(--cool-lt)}
+  .towns{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+  .towns span{border:1px solid #cfe1f0;border-radius:100px;padding:7px 16px;
+    font-size:.93rem;color:var(--ink-2);background:var(--white)}
+
+  /* ---------- contact ---------- */
+  .contact{background:var(--ink);color:#fff}
+  .contact h2{color:#fff}
+  .contact .lede{color:#c2d2e0}
+  .bignum{display:inline-block;margin-top:26px;font-size:clamp(2rem,6vw,3.1rem);
+    font-weight:800;letter-spacing:-.03em;color:#e0a563;text-decoration:none}
+  .bignum:hover{color:#f0bb80}
+  .addr{margin-top:20px;color:#c2d2e0;font-size:1.02rem;line-height:1.9}
+  .addr a{color:#9fc6e6;text-decoration:none}
+
+  footer{background:#081321;color:#728295;font-size:.88rem;padding:26px 0}
+  footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+  @media (max-width:860px){ .feat{grid-template-columns:1fr;gap:30px} }
+  @media (max-width:760px){
+    .seasons{grid-template-columns:1fr}
+    .trust .wrap{grid-template-columns:1fr}
+    section{padding:52px 0}
+    .hero{padding:48px 0 56px}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-note">
+  <div class="wrap">
+    <strong>This is a proposal, not a live website.</strong>
+    We built it for Cmags HVAC to show you what a finished one looks like. It is hidden
+    from Google and nobody sees it unless you send them the link. If you want it, it
+    becomes yours — <strong>$249, once</strong>, no monthly fee. If you do not, tell us
+    and we will take it down.
+    <span class="pn-by">Built by Curbside, a service of Atlas Inc.</span>
+  </div>
+</div>
+
+<div class="callbar">
+  <div class="wrap">
+    <div class="mark">CMAGS HVAC<span>Heating &amp; Cooling · Warwick, RI</span></div>
+    <a class="callbtn" href="tel:+14012624433">📞 (401) 262-4433</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Warwick, Rhode Island</div>
+    <h1>Warm in January, cool in July, one company for both.</h1>
+    <p>Cmags HVAC is a family owned and operated heating and cooling company serving
+       homeowners across Rhode Island — furnaces, air conditioning, heat pumps, and
+       ductless mini-splits, installed and repaired.</p>
+    <div class="actions">
+      <a class="callbtn" href="tel:+14012624433">Call (401) 262-4433</a>
+      <a class="ghost" href="#services">What we do</a>
+    </div>
+  </div>
+</header>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="tcell">
+      <b class="stars">★★★★★</b>
+      <small><strong>5.0</strong> across 20 Google reviews</small>
+    </div>
+    <div class="tcell">
+      <b>Family Owned</b>
+      <small>Owned and operated, not a franchise</small>
+    </div>
+    <div class="tcell">
+      <b>Heating &amp; Cooling</b>
+      <small>Both trades under one roof</small>
+    </div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>Both halves of the year</h2>
+    <p class="lede">A Rhode Island house has to survive a January cold snap and an
+       August heat wave, and the equipment that does each is our whole job. We install
+       it, we service it, and we come back when it quits at the worst possible time.</p>
+
+    <div class="seasons">
+      <div class="season warm">
+        <div class="tag">When it's cold</div>
+        <h3>Heating</h3>
+        <p>The system you notice only when it stops. We keep it running and replace it
+           before it fails on the coldest night of the year.</p>
+        <ul>
+          <li>Furnace and boiler installation</li>
+          <li>Heating repair and no-heat calls</li>
+          <li>Seasonal maintenance and tune-ups</li>
+          <li>Heat pump installation and consultation</li>
+        </ul>
+      </div>
+
+      <div class="season cool">
+        <div class="tag">When it's hot</div>
+        <h3>Cooling</h3>
+        <p>Central air and ductless systems, sized to the house so a room is
+           comfortable instead of either freezing or ignored.</p>
+        <ul>
+          <li>Central air conditioning installation</li>
+          <li>A/C repair and annual inspections</li>
+          <li>Ductless mini-split systems</li>
+          <li>Maintenance to keep efficiency up</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="feature">
+  <div class="wrap feat">
+    <div>
+      <span class="badge">What people are putting in now</span>
+      <h2>Ductless mini-splits</h2>
+      <p class="lede">One outdoor unit, quiet indoor heads, and no ductwork to tear
+         into. They heat and cool the same room, they zone a house so you are not
+         paying to condition the rooms nobody is in, and they are the single most
+         common upgrade we are asked about. If you have a room that is always too hot
+         or too cold, this is usually the answer — call and we will tell you whether it
+         fits your house.</p>
+    </div>
+    <div>
+      <div class="season cool" style="margin:0">
+        <div class="tag">Ask us about</div>
+        <h3>Heat pumps &amp; mini-splits</h3>
+        <p>Free consultation on whether a heat pump or ductless system makes sense for
+           your home, your layout, and your bills — no obligation, just an honest read
+           from someone who installs them every week.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="area">
+  <div class="wrap">
+    <h2>Where we work</h2>
+    <p class="lede">Based in Warwick and covering Rhode Island — Kent, Providence,
+       Bristol, Newport, and Washington counties. Not sure if you are in range? Call
+       and ask.</p>
+    <div class="towns">
+      <span>Warwick</span><span>Cranston</span><span>West Warwick</span>
+      <span>East Greenwich</span><span>Coventry</span><span>Providence</span>
+      <span>North Kingstown</span><span>Bristol</span><span>Newport</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <h2>Call before it's an emergency</h2>
+    <p class="lede">Heating and cooling problems announce themselves early if you are
+       listening. Tell us what it is doing and we will tell you whether it waits.</p>
+    <a class="bignum" href="tel:+14012624433">(401) 262-4433</a>
+    <div class="addr">
+      <strong style="color:#fff">Cmags HVAC</strong><br>
+      Warwick, Rhode Island · <a href="mailto:cmagshvac@gmail.com">cmagshvac@gmail.com</a><br>
+      Monday–Friday, 8:00am–4:00pm
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© Cmags HVAC — Warwick, Rhode Island</div>
+    <div>Heating · Cooling · Heat pumps · Mini-splits · (401) 262-4433</div>
+  </div>
+</footer>
+
+</body>
+</html>
