@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Providence Pawnbrokers — Pawn Loans &amp; Jewelry in Providence, RI</title>
+<meta name="description" content="Providence's pawn shop and jewelry store on Broad Street for about 30 years. Cash loans against gold, diamonds, jewelry, coins, and antiques, plus buying and selling. Bonded and insured. Call (401) 461-6337.">
+<!-- Unpublished proposal. Must stay noindex until Providence Pawnbrokers owns it. -->
+<meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --ink:#16181d; --ink-2:#565b66; --line:#e4e2dc;
+    --char:#1c1f26; --char-dk:#121419;
+    --gold:#b8912f; --gold-dk:#957318; --gold-lt:#f7f0dd;
+    --paper:#faf9f6; --white:#fff;
+  }
+  html{scroll-behavior:smooth}
+  body{
+    font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink); background:var(--paper); -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+
+  /* ---------- proposal notice (removed when the site is bought) ---------- */
+  .preview-note{background:#fff8e6;border-bottom:1px solid #f0d9a0;color:#4a3c15;
+    font-size:.9rem;line-height:1.55}
+  .preview-note .wrap{padding:12px 24px}
+  .preview-note strong{color:#2c2308}
+  .pn-by{display:block;margin-top:4px;color:#8a7442;font-size:.82rem}
+
+  /* ---------- call bar ---------- */
+  .callbar{background:var(--char-dk);color:#fff;position:sticky;top:0;z-index:50}
+  .callbar .wrap{display:flex;align-items:center;justify-content:space-between;
+    gap:16px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+  .mark{font-weight:800;letter-spacing:-.01em;font-size:1.08rem;line-height:1.15}
+  .mark small{display:block;font-size:.64rem;font-weight:600;letter-spacing:.18em;
+    text-transform:uppercase;margin-top:3px;color:var(--gold)}
+  .callbtn{
+    display:inline-flex;align-items:center;gap:9px;background:var(--gold);color:#1c1400;
+    font-weight:800;text-decoration:none;padding:11px 20px;border-radius:6px;
+    font-size:1.03rem;letter-spacing:-.01em;white-space:nowrap;
+  }
+  .callbtn:hover{background:#cfa338}
+
+  /* ---------- hero ---------- */
+  .hero{background:linear-gradient(165deg,var(--char) 0%,var(--char-dk) 100%);
+    color:#fff;padding:66px 0 74px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:5px;
+    background:linear-gradient(90deg,var(--gold) 0 45%,#3a3d45 45% 100%)}
+  .eyebrow{color:#d8b459;font-weight:700;font-size:.8rem;letter-spacing:.15em;
+    text-transform:uppercase;margin-bottom:18px}
+  h1{font-size:clamp(2.1rem,5.4vw,3.5rem);line-height:1.08;letter-spacing:-.02em;
+    font-weight:800;max-width:17ch}
+  .hero p{margin-top:20px;font-size:1.14rem;max-width:52ch;color:#c8ccd4}
+  .hero .actions{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .ghost{color:#fff;text-decoration:none;font-weight:600;border:1.5px solid #444852;
+    padding:11px 20px;border-radius:6px}
+  .ghost:hover{border-color:var(--gold);color:var(--gold)}
+
+  /* ---------- trust ---------- */
+  .trust{background:var(--white);border-bottom:1px solid var(--line)}
+  .trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line);padding:0}
+  .tcell{background:var(--white);padding:26px 24px;text-align:center}
+  .tcell b{display:block;font-size:1.4rem;letter-spacing:-.02em;line-height:1.2;
+    color:var(--ink)}
+  .tcell small{display:block;color:var(--ink-2);font-size:.86rem;margin-top:5px}
+
+  /* ---------- sections ---------- */
+  section{padding:66px 0}
+  h2{font-size:clamp(1.5rem,3vw,2.05rem);letter-spacing:-.02em;font-weight:800;
+    margin-bottom:12px}
+  .lede{color:var(--ink-2);max-width:60ch;font-size:1.05rem}
+
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+  .col{border:1px solid var(--line);border-radius:12px;padding:32px;background:var(--white)}
+  .col.dark{background:var(--char);color:#fff;border-color:var(--char)}
+  .col .k{font-weight:800;font-size:.74rem;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--gold-dk)}
+  .col.dark .k{color:var(--gold)}
+  .col h3{font-size:1.35rem;margin:10px 0 12px;letter-spacing:-.015em}
+  .col p{color:var(--ink-2);font-size:.98rem}
+  .col.dark p{color:#c8ccd4}
+  .col .note{margin-top:16px;font-size:.9rem;padding-top:14px;border-top:1px solid var(--line)}
+  .col.dark .note{border-top-color:#33373f;color:#aeb4bf}
+
+  /* ---------- accepted ---------- */
+  .accept{background:var(--gold-lt);border-top:1px solid #ecdcae;border-bottom:1px solid #ecdcae}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .chips span{background:var(--white);border:1px solid #e6d8ac;border-radius:100px;
+    padding:8px 17px;font-size:.95rem;color:#5f4e1c;font-weight:600}
+
+  /* ---------- contact ---------- */
+  .contact{background:var(--char-dk);color:#fff}
+  .contact h2{color:#fff}
+  .contact .lede{color:#c8ccd4}
+  .bignum{display:inline-block;margin-top:24px;font-size:clamp(1.9rem,6vw,3rem);
+    font-weight:800;letter-spacing:-.02em;color:var(--gold);text-decoration:none}
+  .bignum:hover{color:#d8b459}
+  .addr{margin-top:20px;color:#c8ccd4;font-size:1.02rem;line-height:1.9}
+  .addr a{color:var(--gold);text-decoration:none}
+  .hours{margin-top:16px;display:inline-block;background:rgba(184,145,47,.13);
+    border:1px solid rgba(184,145,47,.4);color:#e0c072;border-radius:8px;
+    padding:10px 16px;font-size:.95rem}
+
+  footer{background:#0d0f12;color:#71767f;font-size:.88rem;padding:26px 0}
+  footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+  @media (max-width:760px){
+    .two{grid-template-columns:1fr}
+    .trust .wrap{grid-template-columns:1fr}
+    section{padding:52px 0}
+    .hero{padding:50px 0 56px}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-note">
+  <div class="wrap">
+    <strong>This is a proposal, not a live website.</strong>
+    We built it for Providence Pawnbrokers to show what a finished one looks like. It is
+    hidden from Google and nobody sees it unless you send them the link. If you want it,
+    it becomes yours — <strong>$249, once</strong>, no monthly fee. If you do not, tell
+    us and we will take it down.
+    <span class="pn-by">Built by Curbside, a service of Atlas Inc.</span>
+  </div>
+</div>
+
+<div class="callbar">
+  <div class="wrap">
+    <div class="mark">PROVIDENCE PAWNBROKERS<small>Pawn Loans &amp; Jewelry · Broad St</small></div>
+    <a class="callbtn" href="tel:+14014616337">📞 (401) 461-6337</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Providence, Rhode Island</div>
+    <h1>Cash for what it's worth, on the spot.</h1>
+    <p>Providence Pawnbrokers has been the pawn shop and jewelry store on Broad Street
+       for about thirty years. Bring in gold, diamonds, jewelry, coins, or antiques —
+       walk out with a loan or a fair price. Bonded and insured.</p>
+    <div class="actions">
+      <a class="callbtn" href="tel:+14014616337">Call (401) 461-6337</a>
+      <a class="ghost" href="#how">How it works</a>
+    </div>
+  </div>
+</header>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="tcell">
+      <b>~30 Years</b>
+      <small>On Broad Street in Providence</small>
+    </div>
+    <div class="tcell">
+      <b>Bonded &amp; Insured</b>
+      <small>Your item is safe while it's with us</small>
+    </div>
+    <div class="tcell">
+      <b>Free Estimates</b>
+      <small>Find out what it's worth, no obligation</small>
+    </div>
+  </div>
+</div>
+
+<section id="how">
+  <div class="wrap">
+    <h2>Two ways to walk out with cash</h2>
+    <p class="lede">Bring the item in, we look at it and tell you what it's worth for
+       free, and you decide. Nothing is obligated until you say yes.</p>
+
+    <div class="two">
+      <div class="col dark">
+        <div class="k">Keep your item</div>
+        <h3>Pawn it</h3>
+        <p>A pawn loan is a cash loan against your item as collateral. You get the money
+           now, your item stays safe with us, and you get it back when you repay. Simple
+           as that.</p>
+        <div class="note">No credit check and nothing on your credit report — the loan
+           is against the item, not your score.</div>
+      </div>
+      <div class="col">
+        <div class="k">Done with it</div>
+        <h3>Sell it</h3>
+        <p>Not looking to get it back? Sell it to us outright and walk out with cash the
+           same visit. We buy gold, diamonds, and quality pieces every day and give a
+           straight number.</p>
+        <div class="note">In their own words: <em>"you will get top dollars for the
+           valuable items you are looking to sell."</em></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="accept">
+  <div class="wrap">
+    <h2>What we take</h2>
+    <p class="lede">If it holds value, bring it in and we'll take a look. These are the
+       ones we see most.</p>
+    <div class="chips">
+      <span>Gold</span><span>Silver</span><span>Platinum</span><span>Diamonds</span>
+      <span>Fine jewelry</span><span>Coins</span><span>Antiques</span>
+      <span>Watches</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <h2>Come in or call first</h2>
+    <p class="lede">Tell us what you've got and we'll tell you what it's worth. Downtown
+       Providence, easy to find, easy to park.</p>
+    <a class="bignum" href="tel:+14014616337">(401) 461-6337</a>
+    <div class="addr">
+      <strong style="color:#fff">Providence Pawnbrokers</strong><br>
+      1405 Broad St, Providence, RI 02905<br>
+      <a href="mailto:providencepawnbrokers@gmail.com">providencepawnbrokers@gmail.com</a>
+    </div>
+    <div class="hours">🕙 Open Monday–Saturday, 10:00am–6:00pm</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© Providence Pawnbrokers — Providence, Rhode Island</div>
+    <div>Pawn loans · Jewelry · Gold &amp; diamonds · (401) 461-6337</div>
+  </div>
+</footer>
+
+</body>
+</html>
