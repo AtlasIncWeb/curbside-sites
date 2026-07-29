@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hello Beautiful — Hair Salon &amp; Lash Studio in North Providence, RI</title>
+<meta name="description" content="Hair salon and lash studio on Mineral Spring Ave in North Providence, Rhode Island. Color, balayage, ombre, cuts, keratin smoothing, extensions, and eyelash extensions. Call (401) 233-3335.">
+<!-- Unpublished proposal. Must stay noindex until Hello Beautiful owns it. -->
+<meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --ink:#1d1419; --ink-2:#6b5a63; --line:#ece2e6;
+    --plum:#43202f; --plum-dk:#2c1420; --plum-lt:#f7edf1;
+    --rose:#c4657e; --rose-dk:#a44a63; --rose-lt:#fdf1f4;
+    --gold:#c9a26a;
+    --paper:#fdfafb; --white:#fff;
+  }
+  html{scroll-behavior:smooth}
+  body{
+    font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink); background:var(--paper); -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+
+  /* ---------- proposal notice (removed when the site is bought) ---------- */
+  .preview-note{background:#fff8e6;border-bottom:1px solid #f0d9a0;color:#4a3c15;
+    font-size:.9rem;line-height:1.55}
+  .preview-note .wrap{padding:12px 24px}
+  .preview-note strong{color:#2c2308}
+  .pn-by{display:block;margin-top:4px;color:#8a7442;font-size:.82rem}
+
+  /* ---------- call bar ---------- */
+  .callbar{background:var(--plum-dk);color:#fff;position:sticky;top:0;z-index:50}
+  .callbar .wrap{display:flex;align-items:center;justify-content:space-between;
+    gap:16px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+  .mark{font-weight:800;letter-spacing:-.01em;font-size:1.08rem;line-height:1.15}
+  .mark small{display:block;font-size:.64rem;font-weight:600;letter-spacing:.16em;
+    text-transform:uppercase;margin-top:3px;color:#e0a9bb}
+  .callbtn{
+    display:inline-flex;align-items:center;gap:9px;background:var(--rose);color:#fff;
+    font-weight:800;text-decoration:none;padding:11px 20px;border-radius:6px;
+    font-size:1.03rem;letter-spacing:-.01em;white-space:nowrap;
+  }
+  .callbtn:hover{background:var(--rose-dk)}
+
+  /* ---------- hero ---------- */
+  .hero{background:linear-gradient(155deg,var(--plum) 0%,var(--plum-dk) 100%);
+    color:#fff;padding:66px 0 74px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:5px;
+    background:linear-gradient(90deg,var(--rose) 0 55%,var(--gold) 55% 100%)}
+  .eyebrow{color:#e0a9bb;font-weight:700;font-size:.8rem;letter-spacing:.15em;
+    text-transform:uppercase;margin-bottom:18px}
+  h1{font-size:clamp(2.1rem,5.4vw,3.5rem);line-height:1.08;letter-spacing:-.02em;
+    font-weight:800;max-width:15ch}
+  .hero p{margin-top:20px;font-size:1.14rem;max-width:52ch;color:#e6d5dc}
+  .hero .actions{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .ghost{color:#fff;text-decoration:none;font-weight:600;border:1.5px solid #6d4354;
+    padding:11px 20px;border-radius:6px}
+  .ghost:hover{border-color:var(--gold);color:var(--gold)}
+
+  /* ---------- trust ---------- */
+  .trust{background:var(--white);border-bottom:1px solid var(--line)}
+  .trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line);padding:0}
+  .tcell{background:var(--white);padding:26px 24px;text-align:center}
+  .tcell b{display:block;font-size:1.4rem;letter-spacing:-.02em;line-height:1.2;color:var(--ink)}
+  .tcell small{display:block;color:var(--ink-2);font-size:.86rem;margin-top:5px}
+
+  /* ---------- sections ---------- */
+  section{padding:66px 0}
+  h2{font-size:clamp(1.5rem,3vw,2.05rem);letter-spacing:-.02em;font-weight:800;margin-bottom:12px}
+  .lede{color:var(--ink-2);max-width:60ch;font-size:1.05rem}
+
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+  .panel{border-radius:12px;padding:32px;border:1px solid var(--line)}
+  .panel.color{background:var(--rose-lt);border-color:#f2dbe2}
+  .panel.lash{background:var(--plum-lt);border-color:#ecd9e2}
+  .panel .k{font-weight:800;font-size:.74rem;letter-spacing:.13em;text-transform:uppercase}
+  .panel.color .k{color:var(--rose-dk)}
+  .panel.lash .k{color:var(--plum)}
+  .panel h3{font-size:1.32rem;margin:10px 0 12px;letter-spacing:-.015em}
+  .panel p{color:var(--ink-2);font-size:.98rem}
+  .panel ul{list-style:none;margin-top:16px}
+  .panel li{padding:8px 0 8px 24px;position:relative;border-top:1px solid rgba(0,0,0,.06);
+    font-size:.97rem}
+  .panel li::before{content:"";position:absolute;left:2px;top:15px;width:9px;height:9px;
+    border-radius:50%}
+  .panel.color li::before{background:var(--rose)}
+  .panel.lash li::before{background:var(--plum)}
+  .panel li b{float:right;font-weight:700;color:var(--ink)}
+
+  /* ---------- also ---------- */
+  .also{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .chips span{background:var(--paper);border:1px solid var(--line);border-radius:100px;
+    padding:8px 17px;font-size:.95rem;color:var(--ink-2)}
+  .note{margin-top:26px;font-size:.95rem;color:var(--ink-2);max-width:62ch}
+
+  /* ---------- contact ---------- */
+  .contact{background:var(--plum-dk);color:#fff}
+  .contact h2{color:#fff}
+  .contact .lede{color:#e6d5dc}
+  .bignum{display:inline-block;margin-top:24px;font-size:clamp(1.9rem,6vw,3rem);
+    font-weight:800;letter-spacing:-.02em;color:var(--gold);text-decoration:none}
+  .bignum:hover{color:#e0c093}
+  .addr{margin-top:20px;color:#e6d5dc;font-size:1.02rem;line-height:1.9}
+  .addr a{color:var(--gold);text-decoration:none}
+  .hours{margin-top:18px;display:inline-block;background:rgba(201,162,106,.13);
+    border:1px solid rgba(201,162,106,.4);color:#e0c093;border-radius:8px;
+    padding:12px 16px;font-size:.95rem;line-height:1.9}
+  .social{margin-top:18px;color:#e6d5dc;font-size:.97rem}
+  .social a{color:var(--gold);text-decoration:none;margin-right:14px}
+
+  footer{background:#1c0c14;color:#8a6d79;font-size:.88rem;padding:26px 0}
+  footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+  @media (max-width:760px){
+    .two{grid-template-columns:1fr}
+    .trust .wrap{grid-template-columns:1fr}
+    section{padding:52px 0}
+    .hero{padding:50px 0 56px}
+    .panel li b{float:none;display:block;margin-top:2px}
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-note">
+  <div class="wrap">
+    <strong>This is a proposal, not a live website.</strong>
+    We built it for Hello Beautiful to show what a finished one looks like. It is
+    hidden from Google and nobody sees it unless you send them the link. If you want it,
+    it becomes yours — <strong>$249, once</strong>, no monthly fee. If you do not, tell us
+    and we will take it down.
+    <span class="pn-by">Built by Curbside, a service of Atlas Inc.</span>
+  </div>
+</div>
+
+<div class="callbar">
+  <div class="wrap">
+    <div class="mark">HELLO BEAUTIFUL<small>Hair &amp; Lash · North Providence</small></div>
+    <a class="callbtn" href="tel:+14012333335">📞 (401) 233-3335</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">North Providence, Rhode Island</div>
+    <h1>Color, cuts, and lashes on Mineral Spring.</h1>
+    <p>Hello Beautiful is a hair salon and lash studio on Mineral Spring Avenue —
+       balayage, ombre, highlights, cuts, keratin smoothing, extensions, and full sets
+       of eyelash extensions. Consultations are free.</p>
+    <div class="actions">
+      <a class="callbtn" href="tel:+14012333335">Call (401) 233-3335</a>
+      <a class="ghost" href="#menu">See the menu</a>
+    </div>
+  </div>
+</header>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="tcell">
+      <b>Hair &amp; Lash</b>
+      <small>A salon and a lash studio under one roof</small>
+    </div>
+    <div class="tcell">
+      <b>Free Consultation</b>
+      <small>15–20 minutes before you commit to anything</small>
+    </div>
+    <div class="tcell">
+      <b>Parking in Rear</b>
+      <small>1530 Mineral Spring Ave, North Providence</small>
+    </div>
+  </div>
+</div>
+
+<section id="menu">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <p class="lede">Two sides to the shop: the chair and the lash bed. Prices below are
+       what's on our menu — color work starts where it starts because every head of hair
+       is a different job.</p>
+
+    <div class="two">
+      <div class="panel color">
+        <div class="k">In the chair</div>
+        <h3>Color, blonding &amp; cuts</h3>
+        <p>Brunette to blonde, a root touch-up, or just a cut that finally sits right.</p>
+        <ul>
+          <li>Full Head Balayage <b>from $210</b></li>
+          <li>Ombre <b>from $210</b></li>
+          <li>Full Head Highlight <b>from $210</b></li>
+          <li>Half Head Highlight <b>from $140</b></li>
+          <li>Full Color <b>from $85</b></li>
+          <li>Root Touch Up <b>from $65</b></li>
+          <li>Glaze / Toner <b>$65</b></li>
+          <li>Women's Cut <b>$40</b></li>
+          <li>Men's Cut <b>$15</b></li>
+          <li>Special Occasion / Up Do <b>$55</b></li>
+        </ul>
+      </div>
+      <div class="panel lash">
+        <div class="k">At the lash bed</div>
+        <h3>Eyelash extensions</h3>
+        <p>Full sets and fills, classic through mega volume. We also keep a full retail
+           shop of lash supplies for lash artists.</p>
+        <ul>
+          <li>Classic Full Set <b>$125</b></li>
+          <li>Hybrid Full Set <b>$150</b></li>
+          <li>Volume Full Set <b>$200</b></li>
+          <li>Mega Volume <b>$250</b></li>
+          <li>Classic fills, 1–3 weeks <b>$40–$60</b></li>
+          <li>Hybrid fills, 1–3 weeks <b>$50–$70</b></li>
+          <li>Volume fills, 1–3 weeks <b>$60–$80</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="also">
+  <div class="wrap">
+    <h2>Treatments &amp; the bigger jobs</h2>
+    <p class="lede">Some hair needs more than color. Bond building, smoothing, added
+       length — these are the services that take a consultation first.</p>
+    <div class="chips">
+      <span>Olaplex Treatment · $70</span>
+      <span>Integrity Treatment · $60</span>
+      <span>Deep Conditioning · $50</span>
+      <span>Joico Defy Damage</span>
+      <span>Keratin Smoothing · $250</span>
+      <span>Micro Link Extensions</span>
+      <span>Weft Extensions</span>
+      <span>Color Correction · from $250</span>
+    </div>
+    <p class="note">Keratin smoothing helps eliminate frizz, reduce curl, and deliver
+       healthy looking shine — results last up to 5 months. Hair extensions need a
+       consultation 2–3 weeks before your appointment so we can order what you need.</p>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <h2>Come see Brittney &amp; Morgan</h2>
+    <p class="lede">Call the salon, or book online any time. Not sure what you want yet?
+       The consultation is free — 15 to 20 minutes, no obligation.</p>
+    <a class="bignum" href="tel:+14012333335">(401) 233-3335</a>
+    <div class="addr">
+      <strong style="color:#fff">Hello Beautiful</strong><br>
+      1530 Mineral Spring Ave., North Providence, RI 02904 — parking in rear<br>
+      <a href="mailto:HelloBeautiful_Hair@yahoo.com">HelloBeautiful_Hair@yahoo.com</a><br>
+      <a href="https://www.vagaro.com/hellobeautiful59/book-now">Book online at Vagaro →</a>
+    </div>
+    <div class="hours">
+      🕗 Tuesday 11am–5pm<br>
+      Wednesday &amp; Thursday 11am–7pm<br>
+      Friday &amp; Saturday 9am–5pm
+    </div>
+    <div class="social">
+      <a href="https://www.instagram.com/hellobeautifulri">Instagram @hellobeautifulri</a>
+      <a href="https://www.facebook.com/hellobeautifulhairandlash">Facebook @hellobeautifulhairandlash</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© Hello Beautiful — North Providence, Rhode Island</div>
+    <div>Hair salon &amp; lash studio · (401) 233-3335</div>
+  </div>
+</footer>
+
+</body>
+</html>
