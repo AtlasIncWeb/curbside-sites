@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quality Car Concepts — Auto Repair &amp; Maintenance in North Smithfield, RI</title>
+<meta name="description" content="Honest and reliable auto repair in North Smithfield, Rhode Island since 2013. Tune ups, oil changes, brakes, tires, diagnostics, transmission and power steering service, heating and A/C, plus snow plowing. Call (401) 356-1990.">
+<!-- Unpublished proposal. Must stay noindex until Quality Car Concepts owns it. -->
+<meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --ink:#15181c; --ink-2:#4e565f; --line:#dfe3e7;
+    --steel:#242a31; --steel-dk:#14181d; --steel-lt:#eef1f4;
+    --red:#b32d24; --red-dk:#8e2019; --red-lt:#fceeec;
+    --paper:#f7f8f9; --white:#fff;
+  }
+  html{scroll-behavior:smooth}
+  body{
+    font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink); background:var(--paper); -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+
+  /* ---------- call bar ---------- */
+  .callbar{background:var(--steel-dk);color:#fff;position:sticky;top:0;z-index:50}
+  .callbar .wrap{display:flex;align-items:center;justify-content:space-between;
+    gap:16px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+  .mark{font-weight:800;letter-spacing:-.01em;font-size:1.08rem;line-height:1.15}
+  .mark small{display:block;font-size:.64rem;font-weight:600;letter-spacing:.16em;
+    text-transform:uppercase;margin-top:3px;color:#e07a70}
+  .callbtn{
+    display:inline-flex;align-items:center;gap:9px;background:var(--red);color:#fff;
+    font-weight:800;text-decoration:none;padding:11px 20px;border-radius:6px;
+    font-size:1.03rem;letter-spacing:-.01em;white-space:nowrap;
+  }
+  .callbtn:hover{background:#c93a30}
+
+  /* ---------- hero ---------- */
+  .hero{background:linear-gradient(158deg,#2c333b 0%,var(--steel-dk) 100%);
+    color:#fff;padding:66px 0 74px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:5px;
+    background:linear-gradient(90deg,var(--red) 0 46%,#3d454e 46% 100%)}
+  .eyebrow{color:#a9b4c0;font-weight:700;font-size:.8rem;letter-spacing:.15em;
+    text-transform:uppercase;margin-bottom:18px}
+  h1{font-size:clamp(2.1rem,5.4vw,3.5rem);line-height:1.08;letter-spacing:-.02em;
+    font-weight:800;max-width:15ch}
+  .hero p{margin-top:20px;font-size:1.14rem;max-width:54ch;color:#c8d0d8}
+  .hero .actions{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .ghost{color:#fff;text-decoration:none;font-weight:600;border:1.5px solid #4a535d;
+    padding:11px 20px;border-radius:6px}
+  .ghost:hover{border-color:#e07a70;color:#e07a70}
+
+  /* ---------- trust ---------- */
+  .trust{background:var(--white);border-bottom:1px solid var(--line)}
+  .trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line);padding:0}
+  .tcell{background:var(--white);padding:26px 24px;text-align:center}
+  .tcell b{display:block;font-size:1.4rem;letter-spacing:-.02em;line-height:1.2;color:var(--ink)}
+  .tcell small{display:block;color:var(--ink-2);font-size:.86rem;margin-top:5px}
+
+  /* ---------- sections ---------- */
+  section{padding:66px 0}
+  h2{font-size:clamp(1.5rem,3vw,2.05rem);letter-spacing:-.02em;font-weight:800;margin-bottom:12px}
+  .lede{color:var(--ink-2);max-width:62ch;font-size:1.05rem}
+
+  .quote{margin-top:34px;border-left:4px solid var(--red);background:var(--white);
+    border-radius:0 10px 10px 0;padding:24px 28px;max-width:64ch;
+    border-top:1px solid var(--line);border-right:1px solid var(--line);
+    border-bottom:1px solid var(--line)}
+  .quote p{font-size:1.1rem;line-height:1.6;letter-spacing:-.01em}
+  .quote cite{display:block;margin-top:12px;font-style:normal;font-size:.86rem;
+    color:var(--ink-2)}
+
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+  .panel{border-radius:12px;padding:32px;border:1px solid var(--line)}
+  .panel.svc{background:var(--steel-lt);border-color:#d9dfe6}
+  .panel.rep{background:var(--red-lt);border-color:#f3d9d5}
+  .panel .k{font-weight:800;font-size:.74rem;letter-spacing:.13em;text-transform:uppercase}
+  .panel.svc .k{color:var(--steel)}
+  .panel.rep .k{color:var(--red-dk)}
+  .panel h3{font-size:1.32rem;margin:10px 0 12px;letter-spacing:-.015em}
+  .panel p{color:var(--ink-2);font-size:.98rem}
+  .panel ul{list-style:none;margin-top:16px}
+  .panel li{padding:8px 0 8px 24px;position:relative;border-top:1px solid rgba(0,0,0,.06);
+    font-size:.97rem}
+  .panel li::before{content:"";position:absolute;left:2px;top:15px;width:9px;height:9px;
+    border-radius:2px}
+  .panel.svc li::before{background:var(--steel)}
+  .panel.rep li::before{background:var(--red)}
+
+  /* ---------- also ---------- */
+  .also{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .chips span{background:var(--paper);border:1px solid var(--line);border-radius:100px;
+    padding:8px 17px;font-size:.95rem;color:var(--ink-2)}
+  .plow{margin-top:28px;background:var(--steel-lt);border:1px solid #d9dfe6;
+    border-radius:10px;padding:22px 26px;max-width:60ch}
+  .plow b{display:block;font-size:1.06rem;letter-spacing:-.01em;margin-bottom:6px}
+  .plow span{color:var(--ink-2);font-size:.98rem}
+
+  /* ---------- contact ---------- */
+  .contact{background:var(--steel-dk);color:#fff}
+  .contact h2{color:#fff}
+  .contact .lede{color:#c8d0d8}
+  .bignum{display:inline-block;margin-top:24px;font-size:clamp(1.9rem,6vw,3rem);
+    font-weight:800;letter-spacing:-.02em;color:#e8837a;text-decoration:none}
+  .bignum:hover{color:#f0a099}
+  .addr{margin-top:20px;color:#c8d0d8;font-size:1.02rem;line-height:1.9}
+  .addr a{color:#e8837a;text-decoration:none}
+  .hours{margin-top:16px;display:inline-block;background:rgba(232,131,122,.13);
+    border:1px solid rgba(232,131,122,.4);color:#f0a099;border-radius:8px;
+    padding:10px 16px;font-size:.95rem}
+
+  footer{background:#0c0f12;color:#6d7885;font-size:.88rem;padding:26px 0}
+  footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+  @media (max-width:760px){
+    .two{grid-template-columns:1fr}
+    .trust .wrap{grid-template-columns:1fr}
+    section{padding:52px 0}
+    .hero{padding:50px 0 56px}
+  }
+
+  /* ---------- closing offer (Curbside) — shown AFTER they've seen the site ---------- */
+  .cb-offer{background:#faf7f1;border-top:1px solid #e7e0d3;padding:62px 0;text-align:center}
+  .cb-offer .cb-kicker{color:#b0894a;font-weight:700;font-size:.74rem;letter-spacing:.15em;
+    text-transform:uppercase}
+  .cb-offer h2{font-size:clamp(1.55rem,3.4vw,2.15rem);font-weight:800;letter-spacing:-.02em;
+    margin:10px 0 14px;color:#20242b}
+  .cb-offer p{max-width:56ch;margin:0 auto;color:#495264;font-size:1.05rem;line-height:1.62}
+  .cb-offer .cb-by{margin-top:18px;font-size:.85rem;color:#8a94a3}
+</style>
+</head>
+<body>
+
+<div class="callbar">
+  <div class="wrap">
+    <div class="mark">QUALITY CAR CONCEPTS<small>Auto Repair · North Smithfield</small></div>
+    <a class="callbtn" href="tel:+14013561990">📞 (401) 356-1990</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">North Smithfield, Rhode Island</div>
+    <h1>Devoted to quality and honesty.</h1>
+    <p>Full-service auto repair and maintenance on Smithfield Road since 2013 —
+       tune ups, brakes, tires, diagnostics, heating and A/C, and the scheduled
+       service your manufacturer asks for. Night drop available.</p>
+    <div class="actions">
+      <a class="callbtn" href="tel:+14013561990">Call (401) 356-1990</a>
+      <a class="ghost" href="#services">What we service</a>
+    </div>
+  </div>
+</header>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="tcell">
+      <b>Since 2013</b>
+      <small>Serving the North Smithfield area</small>
+    </div>
+    <div class="tcell">
+      <b>Night Drop</b>
+      <small>Leave the keys, we'll start in the morning</small>
+    </div>
+    <div class="tcell">
+      <b>Free Advisory</b>
+      <small>Free maintenance advisory before you commit</small>
+    </div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What we service</h2>
+    <p class="lede">Routine maintenance that keeps a car out of the shop, and the repairs
+       that get it back on the road when something goes. One shop, both ends of it.</p>
+
+    <div class="quote">
+      <p>“Quality Car Concepts is Devoted to Quality and Honesty. We have been dedicated
+         to providing Honest and Reliable Auto Repair maintenance and services in North
+         Smithfield, Rhode Island area since 2013.”</p>
+      <cite>— Quality Car Concepts, in their own words</cite>
+    </div>
+
+    <div class="two">
+      <div class="panel svc">
+        <div class="k">Keep it running</div>
+        <h3>Maintenance</h3>
+        <p>The scheduled work that costs a little now instead of a lot later.</p>
+        <ul>
+          <li>Free maintenance advisory</li>
+          <li>Tune ups</li>
+          <li>Oil and filter change</li>
+          <li>Chassis lubrication</li>
+          <li>Air, fuel, and cabin filters</li>
+          <li>Wiper blades and drive (fan) belts</li>
+          <li>Manufacturer scheduled maintenance</li>
+        </ul>
+      </div>
+      <div class="panel rep">
+        <div class="k">Fix what's wrong</div>
+        <h3>Repair &amp; diagnostics</h3>
+        <p>Something's making a noise, leaking, or lighting up the dash — bring it in.</p>
+        <ul>
+          <li>Diagnostics</li>
+          <li>Transmission service and flush</li>
+          <li>Power steering service and flush</li>
+          <li>Heating and air conditioning</li>
+          <li>Steering and suspension</li>
+          <li>Belt and hose repair and replacement</li>
+          <li>Drive-shaft repair</li>
+          <li>Emergency repairs</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="also">
+  <div class="wrap">
+    <h2>Tires, inspections, and winter</h2>
+    <p class="lede">Buying a used car and want someone to look at it first? Need the tires
+       rotated before a long drive? That's the same phone call.</p>
+    <div class="chips">
+      <span>Tire rotation and balancing</span><span>Pre-purchase inspection</span>
+      <span>Brakes</span><span>Shocks and struts</span>
+    </div>
+    <div class="plow">
+      <b>❄️ We also plow.</b>
+      <span>Snow plowing out of the same shop on Smithfield Road — worth having the
+        number in your phone before the first storm.</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <h2>Bring it by</h2>
+    <p class="lede">Tell us what it's doing and we'll tell you what it takes to fix it.
+       If we're closed, the night drop is there — leave the keys and we'll start in the
+       morning.</p>
+    <a class="bignum" href="tel:+14013561990">(401) 356-1990</a>
+    <div class="addr">
+      <strong style="color:#fff">Quality Car Concepts</strong><br>
+      515 Smithfield Rd., North Smithfield, RI 02896<br>
+      <a href="mailto:qualitycarconcepts1@gmail.com">qualitycarconcepts1@gmail.com</a><br>
+      Fax (401) 356-1991
+    </div>
+    <div class="hours">🕘 Monday–Friday 9:00am–5:30pm · Saturday 9:30am–3:00pm · Night drop available</div>
+  </div>
+</section>
+
+<section class="cb-offer">
+  <div class="wrap">
+    <div class="cb-kicker">A quick note from Ren</div>
+    <h2>Like it? It's yours.</h2>
+    <p>I built this preview for you — it isn't live anywhere yet, and it's hidden from Google,
+       so nobody sees it unless you send them the link. If you want it, it's <strong>$249, one
+       time</strong> — no monthly fee, no contract. You'd own it, and I'd move it onto your own
+       web address. Not for you? Just reply to my email and I'll take it down that day.</p>
+    <div class="cb-by">Curbside — a service of Atlas Inc. · Nothing here is invented; if a detail is wrong, I'll fix it.</div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div>© Quality Car Concepts — North Smithfield, Rhode Island</div>
+    <div>Auto repair &amp; maintenance · (401) 356-1990</div>
+  </div>
+</footer>
+
+</body>
+</html>
