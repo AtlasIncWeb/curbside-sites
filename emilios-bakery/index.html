@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emilio's Bakery — Italian Bakery in West Warwick, RI</title>
+<meta name="description" content="Italian bakery on Quaker Lane in West Warwick, Rhode Island. Fresh bread, pastry, cookies, and coffee, with special orders available. Call (401) 828-2456.">
+<!-- Unpublished proposal. Must stay noindex until Emilio's Bakery owns it. -->
+<meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --ink:#2b1d13; --ink-2:#6a584a; --line:#e6dcca;
+    --esp:#3a2517; --esp-dk:#241408; --esp-lt:#f3ebdd;
+    --pist:#5e7f4a; --pist-dk:#46612f; --pist-lt:#eef3e7;
+    --cream:#fdf8ec; --paper:#fbf6e9; --white:#fff;
+  }
+  html{scroll-behavior:smooth}
+  body{
+    font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink); background:var(--paper); -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+
+  /* ---------- call bar ---------- */
+  .callbar{background:var(--esp-dk);color:#fff;position:sticky;top:0;z-index:50}
+  .callbar .wrap{display:flex;align-items:center;justify-content:space-between;
+    gap:16px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+  .mark{font-weight:800;letter-spacing:-.01em;font-size:1.08rem;line-height:1.15}
+  .mark small{display:block;font-size:.64rem;font-weight:600;letter-spacing:.16em;
+    text-transform:uppercase;margin-top:3px;color:#a8c48f}
+  .callbtn{
+    display:inline-flex;align-items:center;gap:9px;background:var(--pist);color:#fff;
+    font-weight:800;text-decoration:none;padding:11px 20px;border-radius:6px;
+    font-size:1.03rem;letter-spacing:-.01em;white-space:nowrap;
+  }
+  .callbtn:hover{background:#6d9155}
+
+  /* ---------- hero ---------- */
+  .hero{background:linear-gradient(160deg,#4b3120 0%,var(--esp-dk) 100%);
+    color:#fff;padding:66px 0 74px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:5px;
+    background:linear-gradient(90deg,var(--pist) 0 34%,#f4f1e6 34% 67%,#a8322c 67% 100%)}
+  .eyebrow{color:#d6c3a6;font-weight:700;font-size:.8rem;letter-spacing:.15em;
+    text-transform:uppercase;margin-bottom:18px}
+  h1{font-size:clamp(2.1rem,5.4vw,3.5rem);line-height:1.08;letter-spacing:-.02em;
+    font-weight:800;max-width:16ch}
+  .hero p{margin-top:20px;font-size:1.14rem;max-width:53ch;color:#e2d5c2}
+  .hero .actions{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .ghost{color:#fff;text-decoration:none;font-weight:600;border:1.5px solid #6b5540;
+    padding:11px 20px;border-radius:6px}
+  .ghost:hover{border-color:#a8c48f;color:#a8c48f}
+
+  /* ---------- trust ---------- */
+  .trust{background:var(--white);border-bottom:1px solid var(--line)}
+  .trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line);padding:0}
+  .tcell{background:var(--white);padding:26px 24px;text-align:center}
+  .tcell b{display:block;font-size:1.4rem;letter-spacing:-.02em;line-height:1.2;color:var(--ink)}
+  .tcell small{display:block;color:var(--ink-2);font-size:.86rem;margin-top:5px}
+
+  /* ---------- sections ---------- */
+  section{padding:66px 0}
+  h2{font-size:clamp(1.5rem,3vw,2.05rem);letter-spacing:-.02em;font-weight:800;margin-bottom:12px}
+  .lede{color:var(--ink-2);max-width:62ch;font-size:1.05rem}
+
+  .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:38px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:12px;
+    padding:26px 22px}
+  .card .ic{font-size:1.7rem;line-height:1}
+  .card h3{font-size:1.16rem;margin:12px 0 8px;letter-spacing:-.015em}
+  .card p{color:var(--ink-2);font-size:.95rem}
+
+  .story{background:var(--esp-lt);border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line)}
+  .quote{margin-top:26px;border-left:4px solid var(--pist);background:var(--white);
+    border-radius:0 10px 10px 0;padding:24px 28px;max-width:64ch;
+    border-top:1px solid var(--line);border-right:1px solid var(--line);
+    border-bottom:1px solid var(--line)}
+  .quote p{font-size:1.1rem;line-height:1.6;letter-spacing:-.01em}
+  .quote cite{display:block;margin-top:12px;font-style:normal;font-size:.86rem;
+    color:var(--ink-2)}
+  .special{margin-top:28px;background:var(--pist-lt);border:1px solid #d8e4cb;
+    border-radius:10px;padding:22px 26px;max-width:60ch}
+  .special b{display:block;font-size:1.06rem;letter-spacing:-.01em;margin-bottom:6px}
+  .special span{color:var(--ink-2);font-size:.98rem}
+
+  /* ---------- contact ---------- */
+  .contact{background:var(--esp-dk);color:#fff}
+  .contact h2{color:#fff}
+  .contact .lede{color:#e2d5c2}
+  .bignum{display:inline-block;margin-top:24px;font-size:clamp(1.9rem,6vw,3rem);
+    font-weight:800;letter-spacing:-.02em;color:#a8c48f;text-decoration:none}
+  .bignum:hover{color:#c0d8a8}
+  .addr{margin-top:20px;color:#e2d5c2;font-size:1.02rem;line-height:1.9}
+  .addr a{color:#a8c48f;text-decoration:none}
+  .hours{margin-top:16px;display:inline-block;background:rgba(168,196,143,.13);
+    border:1px solid rgba(168,196,143,.4);color:#c0d8a8;border-radius:8px;
+    padding:10px 16px;font-size:.95rem}
+
+  footer{background:#1a0e05;color:#8a7660;font-size:.88rem;padding:26px 0}
+  footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+  @media (max-width:900px){ .cards{grid-template-columns:repeat(2,1fr)} }
+  @media (max-width:760px){
+    .trust .wrap{grid-template-columns:1fr}
+    section{padding:52px 0}
+    .hero{padding:50px 0 56px}
+  }
+
+  /* ---------- closing offer (Curbside) — shown AFTER they've seen the site ---------- */
+  .cb-offer{background:#faf7f1;border-top:1px solid #e7e0d3;padding:62px 0;text-align:center}
+  .cb-offer .cb-kicker{color:#b0894a;font-weight:700;font-size:.74rem;letter-spacing:.15em;
+    text-transform:uppercase}
+  .cb-offer h2{font-size:clamp(1.55rem,3.4vw,2.15rem);font-weight:800;letter-spacing:-.02em;
+    margin:10px 0 14px;color:#20242b}
+  .cb-offer p{max-width:56ch;margin:0 auto;color:#495264;font-size:1.05rem;line-height:1.62}
+  .cb-offer .cb-by{margin-top:18px;font-size:.85rem;color:#8a94a3}
+</style>
+</head>
+<body>
+
+<div class="callbar">
+  <div class="wrap">
+    <div class="mark">EMILIO'S BAKERY<small>Italian Bakery · West Warwick</small></div>
+    <a class="callbtn" href="tel:+14018282456">📞 (401) 828-2456</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">West Warwick, Rhode Island</div>
+    <h1>The foods of Italy, on Quaker Lane.</h1>
+    <p>Fresh bread, pastry, and cookies from an Italian bakery in West Warwick —
+       plus a cup of coffee to start the day. Special orders welcome.</p>
+    <div class="actions">
+      <a class="callbtn" href="tel:+14018282456">Call (401) 828-2456</a>
+      <a class="ghost" href="#counter">What's on the counter</a>
+    </div>
+  </div>
+</header>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="tcell">
+      <b>Italian Bakery</b>
+      <small>Authentic Italian, in their own words</small>
+    </div>
+    <div class="tcell">
+      <b>Special Orders</b>
+      <small>We can special order products for you</small>
+    </div>
+    <div class="tcell">
+      <b>Quaker Lane</b>
+      <small>35 Quaker Lane, West Warwick</small>
+    </div>
+  </div>
+</div>
+
+<section id="counter">
+  <div class="wrap">
+    <h2>What's on the counter</h2>
+    <p class="lede">A neighborhood Italian bakery — the bread for dinner, the tray for
+       Sunday, and something to eat on the way out the door.</p>
+
+    <div class="cards">
+      <div class="card">
+        <div class="ic">🍞</div>
+        <h3>Fresh bread</h3>
+        <p>Baked for the table you're bringing it home to.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🥐</div>
+        <h3>Pastry</h3>
+        <p>The Italian pastry case, filled fresh.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🍪</div>
+        <h3>Cookies</h3>
+        <p>By the piece or by the tray for the family.</p>
+      </div>
+      <div class="card">
+        <div class="ic">☕</div>
+        <h3>Coffee</h3>
+        <p>“Jump Start Your Day with our Brew only $1.”</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <h2>How it started</h2>
+    <p class="lede">Emilio's tells its own story better than we could, so here it is
+       in the shop's own words.</p>
+
+    <div class="quote">
+      <p>“Emilio's was started by two men, Cosmo and Erasmo, who had a dream to bring
+         high quality Italian bakery items at affordable prices to Rhode Island.”</p>
+      <cite>— Emilio's Bakery, in their own words</cite>
+    </div>
+
+    <div class="quote">
+      <p>“Our food speaks for itself come and see and taste the foods of Italy and your
+         ears will hear our song of high quality authentic Italian food at affordable
+         prices.”</p>
+      <cite>— Emilio's Bakery, in their own words</cite>
+    </div>
+
+    <div class="special">
+      <b>🎂 Need something for an occasion?</b>
+      <span>We can special order products for you — call the shop and tell us what
+        you need and when you need it.</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <h2>Stop in or call ahead</h2>
+    <p class="lede">We're on Quaker Lane in West Warwick. Call for a special order,
+       or to check what's coming out of the oven today.</p>
+    <a class="bignum" href="tel:+14018282456">(401) 828-2456</a>
+    <div class="addr">
+      <strong style="color:#fff">Emilio's Bakery</strong><br>
+      35 Quaker Lane, West Warwick, RI 02893<br>
+      <a href="mailto:emilios.emilios@aol.com">emilios.emilios@aol.com</a>
+    </div>
+    <div class="hours">🕖 Please call for today's hours</div>
+  </div>
+</section>
+
+<section class="cb-offer">
+  <div class="wrap">
+    <div class="cb-kicker">A quick note from Ren</div>
+    <h2>Like it? It's yours.</h2>
+    <p>I built this preview for you — it isn't live anywhere yet, and it's hidden from Google,
+       so nobody sees it unless you send them the link. If you want it, it's <strong>$249, one
+       time</strong> — no monthly fee, no contract. You'd own it, and I'd move it onto your own
+       web address. Not for you? Just reply to my email and I'll take it down that day.</p>
+    <div class="cb-by">Curbside — a service of Atlas Inc. · Nothing here is invented; if a detail is wrong, I'll fix it.</div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div>© Emilio's Bakery — West Warwick, Rhode Island</div>
+    <div>Italian bakery · (401) 828-2456</div>
+  </div>
+</footer>
+
+</body>
+</html>
