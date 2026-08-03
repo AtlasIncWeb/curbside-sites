@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cat's Cakes and Cafe — Custom Cakes, Cupcakes &amp; Treats in Warwick, RI</title>
+<meta name="description" content="Custom cakes, cupcakes, and treats made to order in Warwick, Rhode Island. Smash cakes, tiered and wedding cakes, gourmet cupcakes, cake pops, dipped chocolates, and custom sugar cookies. Order by email.">
+<!-- Unpublished proposal. Must stay noindex until Cat's Cakes and Cafe owns it. -->
+<meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --ink:#2a1a20; --ink-2:#7a5c66; --line:#f0e2e6;
+    --berry:#b83b5e; --berry-dk:#8d2846; --berry-lt:#fdeff3;
+    --cream:#fff8f3; --gold:#d8a657; --plum:#5c2338;
+    --paper:#fffaf7; --white:#fff;
+  }
+  html{scroll-behavior:smooth}
+  body{font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+
+  /* call bar */
+  .callbar{background:var(--plum);color:#fff;position:sticky;top:0;z-index:50}
+  .callbar .wrap{display:flex;align-items:center;justify-content:space-between;
+    gap:16px;padding:12px 24px;flex-wrap:wrap}
+  .mark{font-weight:800;letter-spacing:-.01em;font-size:1.08rem;line-height:1.15}
+  .mark small{display:block;font-size:.62rem;font-weight:600;letter-spacing:.16em;
+    text-transform:uppercase;margin-top:3px;color:#e6b3c5}
+  .callbtn{display:inline-flex;align-items:center;gap:9px;background:var(--berry);color:#fff;
+    font-weight:800;text-decoration:none;padding:11px 20px;border-radius:6px;
+    font-size:1rem;letter-spacing:-.01em;white-space:nowrap}
+  .callbtn:hover{background:var(--berry-dk)}
+
+  /* hero */
+  .hero{background:linear-gradient(155deg,var(--berry) 0%,var(--plum) 100%);
+    color:#fff;padding:64px 0 72px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:5px;
+    background:linear-gradient(90deg,var(--gold) 0 55%,var(--berry-lt) 55% 100%)}
+  .eyebrow{color:#f0c07f;font-weight:700;font-size:.8rem;letter-spacing:.15em;
+    text-transform:uppercase;margin-bottom:18px}
+  h1{font-size:clamp(2.1rem,5.4vw,3.5rem);line-height:1.08;letter-spacing:-.02em;
+    font-weight:800;max-width:16ch}
+  .hero p{margin-top:20px;font-size:1.14rem;max-width:52ch;color:#fbe4ec}
+  .hero .actions{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .ghost{color:#fff;text-decoration:none;font-weight:600;border:1.5px solid #b7648a;
+    padding:11px 20px;border-radius:6px}
+  .ghost:hover{border-color:var(--gold);color:var(--gold)}
+
+  /* trust */
+  .trust{background:var(--white);border-bottom:1px solid var(--line)}
+  .trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line);padding:0}
+  .tcell{background:var(--white);padding:26px 24px;text-align:center}
+  .tcell b{display:block;font-size:1.35rem;letter-spacing:-.02em;line-height:1.2;color:var(--ink)}
+  .tcell small{display:block;color:var(--ink-2);font-size:.86rem;margin-top:5px}
+
+  section{padding:64px 0}
+  h2{font-size:clamp(1.5rem,3vw,2.05rem);letter-spacing:-.02em;font-weight:800;margin-bottom:12px}
+  .lede{color:var(--ink-2);max-width:60ch;font-size:1.05rem}
+
+  /* menu */
+  .menu{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+  .card{border-radius:14px;padding:30px;border:1px solid var(--line);background:var(--white)}
+  .card.wide{grid-column:1 / -1}
+  .card .k{font-weight:800;font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--berry-dk)}
+  .card h3{font-size:1.3rem;margin:9px 0 6px;letter-spacing:-.015em}
+  .card p.sub{color:var(--ink-2);font-size:.96rem;margin-bottom:8px}
+  .card ul{list-style:none;margin-top:14px}
+  .card li{padding:9px 0;border-top:1px solid var(--line);font-size:.97rem;
+    display:flex;justify-content:space-between;gap:14px;align-items:baseline}
+  .card li span{color:var(--ink)}
+  .card li b{font-weight:800;color:var(--berry-dk);white-space:nowrap}
+  .flav{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .flav span{background:var(--berry-lt);border:1px solid #f4d3de;border-radius:100px;
+    padding:6px 14px;font-size:.9rem;color:var(--plum)}
+
+  /* story */
+  .story{background:var(--cream);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .quote{font-size:clamp(1.25rem,2.6vw,1.6rem);line-height:1.5;font-weight:700;
+    letter-spacing:-.01em;max-width:24ch;color:var(--plum)}
+  .story .by{margin-top:16px;color:var(--ink-2);font-size:.95rem}
+  .story .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:36px;align-items:center}
+  .story .how{font-size:.98rem;color:var(--ink-2)}
+  .story .how b{color:var(--ink)}
+
+  /* contact */
+  .contact{background:var(--plum);color:#fff}
+  .contact h2{color:#fff}
+  .contact .lede{color:#f3d9e2}
+  .bigmail{display:inline-block;margin-top:22px;font-size:clamp(1.3rem,4.2vw,2rem);
+    font-weight:800;letter-spacing:-.02em;color:var(--gold);text-decoration:none;word-break:break-all}
+  .bigmail:hover{color:#eac588}
+  .addr{margin-top:20px;color:#f3d9e2;font-size:1.02rem;line-height:1.9}
+  .addr a{color:var(--gold);text-decoration:none}
+  .social{margin-top:18px;font-size:.97rem}
+  .social a{color:var(--gold);text-decoration:none;margin-right:14px}
+
+  footer{background:#3d1626;color:#c79aab;font-size:.88rem;padding:26px 0}
+  footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+  @media (max-width:760px){
+    .menu{grid-template-columns:1fr}
+    .trust .wrap{grid-template-columns:1fr}
+    .story .grid{grid-template-columns:1fr;gap:22px}
+    section{padding:50px 0}
+    .hero{padding:48px 0 54px}
+  }
+
+  /* closing offer (Curbside) — shown AFTER they've seen the site */
+  .cb-offer{background:#faf7f1;border-top:1px solid #e7e0d3;padding:60px 0;text-align:center}
+  .cb-offer .cb-kicker{color:#b0894a;font-weight:700;font-size:.74rem;letter-spacing:.15em;
+    text-transform:uppercase}
+  .cb-offer h2{font-size:clamp(1.55rem,3.4vw,2.15rem);font-weight:800;letter-spacing:-.02em;
+    margin:10px 0 14px;color:#20242b}
+  .cb-offer p{max-width:56ch;margin:0 auto;color:#495264;font-size:1.05rem;line-height:1.62}
+  .cb-offer .cb-by{margin-top:18px;font-size:.85rem;color:#8a94a3}
+</style>
+</head>
+<body>
+
+<div class="callbar">
+  <div class="wrap">
+    <div class="mark">CAT'S CAKES &amp; CAFE<small>Custom cakes · Warwick, RI</small></div>
+    <a class="callbtn" href="mailto:Cakecat87@yahoo.com?subject=Cake%20order">✉️ Order by email</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Warwick, Rhode Island · Est. 2021</div>
+    <h1>Cakes worth the celebration, made to order.</h1>
+    <p>Cat's Cakes and Cafe makes custom cakes, cupcakes, and treats from scratch —
+       smash cakes and tiered showpieces, gourmet cupcakes, cake pops, dipped chocolates,
+       and custom sugar cookies. Tell us the occasion; we'll build the cake around it.</p>
+    <div class="actions">
+      <a class="callbtn" href="mailto:Cakecat87@yahoo.com?subject=Cake%20order">Start an order</a>
+      <a class="ghost" href="#menu">See the menu</a>
+    </div>
+  </div>
+</header>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="tcell">
+      <b>Since 2021</b>
+      <small>A Warwick custom-cake bakery</small>
+    </div>
+    <div class="tcell">
+      <b>Made to Order</b>
+      <small>Baked from scratch for your date</small>
+    </div>
+    <div class="tcell">
+      <b>Cakes · Cupcakes · Treats</b>
+      <small>One baker, the whole dessert table</small>
+    </div>
+  </div>
+</div>
+
+<section id="menu">
+  <div class="wrap">
+    <h2>The menu</h2>
+    <p class="lede">Everything is made to order. Prices are what's on our current list —
+       custom designs and colors are part of the fun, so ask.</p>
+
+    <div class="menu">
+      <div class="card">
+        <div class="k">Custom cakes</div>
+        <h3>From a smash cake to a three-tier</h3>
+        <p class="sub">Feeds are approximate — tell us your headcount and we'll size it.</p>
+        <ul>
+          <li><span>6" Smash Cake</span><b>$55</b></li>
+          <li><span>6" &nbsp;·&nbsp; feeds 10–12</span><b>$75</b></li>
+          <li><span>8" &nbsp;·&nbsp; feeds 20</span><b>$95</b></li>
+          <li><span>10" &nbsp;·&nbsp; feeds 30</span><b>$115</b></li>
+          <li><span>8" Heart Cake &nbsp;·&nbsp; feeds 10–12</span><b>$90</b></li>
+          <li><span>Two-tier &nbsp;·&nbsp; feeds 30–35</span><b>$155</b></li>
+          <li><span>Two-tier &nbsp;·&nbsp; feeds 50–55</span><b>$200</b></li>
+          <li><span>Three-tier &nbsp;·&nbsp; feeds 70</span><b>$255</b></li>
+          <li><span>Wedding cakes</span><b>email for a quote</b></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="k">Cupcakes</div>
+        <h3>By the dozen</h3>
+        <p class="sub">Standard flavors, or go gourmet — 15+ to choose from.</p>
+        <ul>
+          <li><span>Standard (confetti, chocolate, vanilla)</span><b>$36/dz</b></li>
+          <li><span>Gourmet (15+ flavors)</span><b>$42/dz</b></li>
+          <li><span>Cupcake Cake</span><b>$40/dz</b></li>
+          <li><span>Giant Cupcake Cake &nbsp;·&nbsp; feeds 8–10</span><b>$65</b></li>
+        </ul>
+        <div class="flav">
+          <span>Piñata Confetti</span><span>Cookie Butter</span><span>Elvis</span>
+          <span>Reese's PB Blast</span><span>+ more</span>
+        </div>
+      </div>
+
+      <div class="card wide">
+        <div class="k">Treats</div>
+        <h3>For the dessert table &amp; the favors</h3>
+        <ul>
+          <li><span>Dipped chocolate — Oreos, pretzels, Rice Krispies</span><b>$36/dz</b></li>
+          <li><span>Cake pops &amp; cakesicles</span><b>$40/dz</b></li>
+          <li><span>Custom sugar cookies</span><b>$65/dz</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <p class="quote">"Passionate about creating delicious cakes, cupcakes and treats."</p>
+        <p class="by">In their own words — Cat's Cakes and Cafe strives to produce homemade
+           baked goods, provide exceptional service, and spread positivity.</p>
+      </div>
+      <div class="how">
+        <h2 style="font-size:1.35rem">How ordering works</h2>
+        <p><b>1. Email the occasion.</b> Send your date, headcount, and any theme or colors to
+           <a href="mailto:Cakecat87@yahoo.com" style="color:var(--berry-dk);font-weight:700">Cakecat87@yahoo.com</a>.<br><br>
+           <b>2. We quote &amp; confirm.</b> You'll get a price and a design plan — custom cakes,
+           wedding cakes, and big dessert tables all start here.<br><br>
+           <b>3. Pick it up fresh.</b> Made to order in Warwick for your date.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <h2>Start an order</h2>
+    <p class="lede">The fastest way to book a cake is a quick email with your date and
+       headcount. Custom designs welcome — just ask.</p>
+    <a class="bigmail" href="mailto:Cakecat87@yahoo.com?subject=Cake%20order">Cakecat87@yahoo.com</a>
+    <div class="addr">
+      <strong style="color:#fff">Cat's Cakes and Cafe, LLC</strong><br>
+      2424b West Shore Rd, Warwick, RI 02889<br>
+      <a href="https://www.instagram.com/cats_cakes_2020">Instagram @cats_cakes_2020</a>
+    </div>
+    <div class="social">
+      <a href="https://www.instagram.com/cats_cakes_2020">Instagram</a>
+      <a href="https://www.facebook.com/cakecat87">Facebook</a>
+    </div>
+  </div>
+</section>
+
+<section class="cb-offer">
+  <div class="wrap">
+    <div class="cb-kicker">A quick note from Ren</div>
+    <h2>Like it? It's yours.</h2>
+    <p>I built this preview for you — it isn't live anywhere yet, and it's hidden from Google,
+       so nobody sees it unless you send them the link. If you want it, it's <strong>$249, one
+       time</strong> — no monthly fee, no contract. You'd own it, and I'd move it onto your own
+       web address. Not for you? Just reply to my email and I'll take it down that day.</p>
+    <div class="cb-by">Curbside — a service of Atlas Inc. · Nothing here is invented; if a detail is wrong, I'll fix it.</div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div>© Cat's Cakes and Cafe, LLC — Warwick, Rhode Island</div>
+    <div>Custom cakes, cupcakes &amp; treats · made to order</div>
+  </div>
+</footer>
+
+</body>
+</html>
