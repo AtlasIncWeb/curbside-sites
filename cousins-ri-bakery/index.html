@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cousins R.I. Bakery — Cakes &amp; Baked Goods from Scratch in Kingston, RI</title>
+<meta name="description" content="A from-scratch bakery in Kingston, Rhode Island. Custom cakes tailored to your taste, fresh baked goods, and TLC coffee. Cakes available for pre-order. Call (401) 515-7800.">
+<!-- Unpublished proposal. Must stay noindex until Cousins R.I. Bakery owns it. -->
+<meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --ink:#2a1c12; --ink-2:#7a6350; --line:#efe4d7;
+    --brown:#8a4d2a; --brown-dk:#653418; --brown-lt:#f8ede2;
+    --caramel:#c78a3e; --caramel-lt:#f4e5cd; --cocoa:#4a2c17;
+    --cream:#fdf7ee; --paper:#fefaf4; --white:#fff;
+  }
+  html{scroll-behavior:smooth}
+  body{font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+
+  .callbar{background:var(--cocoa);color:#fff;position:sticky;top:0;z-index:50}
+  .callbar .wrap{display:flex;align-items:center;justify-content:space-between;
+    gap:16px;padding:12px 24px;flex-wrap:wrap}
+  .mark{font-weight:800;letter-spacing:-.01em;font-size:1.08rem;line-height:1.15}
+  .mark small{display:block;font-size:.62rem;font-weight:600;letter-spacing:.16em;
+    text-transform:uppercase;margin-top:3px;color:#e0bd97}
+  .callbtn{display:inline-flex;align-items:center;gap:9px;background:var(--caramel);color:#2a1806;
+    font-weight:800;text-decoration:none;padding:11px 20px;border-radius:6px;
+    font-size:1rem;letter-spacing:-.01em;white-space:nowrap}
+  .callbtn:hover{background:var(--brown);color:#fff}
+
+  .hero{background:linear-gradient(155deg,var(--brown) 0%,var(--cocoa) 100%);
+    color:#fff;padding:64px 0 72px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:5px;
+    background:linear-gradient(90deg,var(--caramel) 0 55%,var(--brown-lt) 55% 100%)}
+  .eyebrow{color:#eec38a;font-weight:700;font-size:.8rem;letter-spacing:.15em;
+    text-transform:uppercase;margin-bottom:18px}
+  h1{font-size:clamp(2.1rem,5.4vw,3.5rem);line-height:1.1;letter-spacing:-.02em;
+    font-weight:800;max-width:16ch}
+  .hero p{margin-top:20px;font-size:1.14rem;max-width:53ch;color:#f1e0cd}
+  .hero .actions{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .ghost{color:#fff;text-decoration:none;font-weight:600;border:1.5px solid #9a6a45;
+    padding:11px 20px;border-radius:6px}
+  .ghost:hover{border-color:var(--caramel);color:var(--caramel-lt)}
+
+  .trust{background:var(--white);border-bottom:1px solid var(--line)}
+  .trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line);padding:0}
+  .tcell{background:var(--white);padding:26px 24px;text-align:center}
+  .tcell b{display:block;font-size:1.3rem;letter-spacing:-.02em;line-height:1.2;color:var(--ink)}
+  .tcell small{display:block;color:var(--ink-2);font-size:.86rem;margin-top:5px}
+
+  section{padding:64px 0}
+  h2{font-size:clamp(1.5rem,3vw,2.05rem);letter-spacing:-.02em;font-weight:800;margin-bottom:12px}
+  .lede{color:var(--ink-2);max-width:62ch;font-size:1.05rem}
+
+  .svc{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+  .stile{border-radius:14px;padding:28px;border:1px solid var(--line);background:var(--white)}
+  .stile.feature{background:var(--brown-lt);border-color:#eed9c2}
+  .stile .k{font-weight:800;font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--brown)}
+  .stile h3{font-size:1.2rem;margin:9px 0 8px;letter-spacing:-.015em}
+  .stile p{color:var(--ink-2);font-size:.96rem}
+
+  .band{background:var(--cream);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .band .quote{font-size:clamp(1.3rem,2.8vw,1.75rem);line-height:1.45;font-weight:800;
+    letter-spacing:-.015em;max-width:22ch;color:var(--brown-dk)}
+  .band .grid{display:grid;grid-template-columns:1fr 1.1fr;gap:36px;align-items:center}
+  .band .how{color:var(--ink-2);font-size:1rem}
+  .band .how b{color:var(--ink)}
+
+  .contact{background:var(--cocoa);color:#fff}
+  .contact h2{color:#fff}
+  .contact .lede{color:#f1e0cd}
+  .bignum{display:inline-block;margin-top:22px;font-size:clamp(1.9rem,6vw,3rem);
+    font-weight:800;letter-spacing:-.02em;color:var(--caramel-lt);text-decoration:none}
+  .bignum:hover{color:#fff}
+  .addr{margin-top:20px;color:#f1e0cd;font-size:1.02rem;line-height:1.9}
+  .addr a{color:var(--caramel-lt);text-decoration:none}
+  .social{margin-top:18px;font-size:.97rem}
+  .social a{color:var(--caramel-lt);text-decoration:none;margin-right:14px}
+
+  footer{background:#33200f;color:#b7997c;font-size:.88rem;padding:26px 0}
+  footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+  @media (max-width:820px){.svc{grid-template-columns:1fr}}
+  @media (max-width:760px){
+    .trust .wrap{grid-template-columns:1fr}
+    .band .grid{grid-template-columns:1fr;gap:22px}
+    section{padding:50px 0}
+    .hero{padding:48px 0 54px}
+  }
+
+  .cb-offer{background:#faf7f1;border-top:1px solid #e7e0d3;padding:60px 0;text-align:center}
+  .cb-offer .cb-kicker{color:#b0894a;font-weight:700;font-size:.74rem;letter-spacing:.15em;
+    text-transform:uppercase}
+  .cb-offer h2{font-size:clamp(1.55rem,3.4vw,2.15rem);font-weight:800;letter-spacing:-.02em;
+    margin:10px 0 14px;color:#20242b}
+  .cb-offer p{max-width:56ch;margin:0 auto;color:#495264;font-size:1.05rem;line-height:1.62}
+  .cb-offer .cb-by{margin-top:18px;font-size:.85rem;color:#8a94a3}
+</style>
+</head>
+<body>
+
+<div class="callbar">
+  <div class="wrap">
+    <div class="mark">COUSINS R.I. BAKERY<small>From scratch · Kingston</small></div>
+    <a class="callbtn" href="tel:+14015157800">📞 (401) 515-7800</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Kingston, Rhode Island</div>
+    <h1>Cakes tailored to your taste, baked from scratch.</h1>
+    <p>Cousins R.I. Bakery specializes in custom cakes and baked goods made from scratch —
+       every cake built to your taste and style — with TLC coffee to go with it. Cakes are
+       available for pre-order.</p>
+    <div class="actions">
+      <a class="callbtn" href="tel:+14015157800">Call (401) 515-7800</a>
+      <a class="ghost" href="#menu">What we bake</a>
+    </div>
+  </div>
+</header>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="tcell">
+      <b>From Scratch</b>
+      <small>Cakes &amp; baked goods, made by hand</small>
+    </div>
+    <div class="tcell">
+      <b>Made to Order</b>
+      <small>Every cake tailored to your taste</small>
+    </div>
+    <div class="tcell">
+      <b>Kingston, RI</b>
+      <small>100 Fortin Rd</small>
+    </div>
+  </div>
+</div>
+
+<section id="menu">
+  <div class="wrap">
+    <h2>What we bake</h2>
+    <p class="lede">A from-scratch bakery — custom cakes for the occasion, fresh baked
+       goods on the counter, and good coffee to go with them.</p>
+
+    <div class="svc">
+      <div class="stile feature">
+        <div class="k">The specialty</div>
+        <h3>Custom cakes</h3>
+        <p>Tailored to your taste and style, from scratch, for your celebration. Available
+           for pre-order — tell us what you're dreaming up.</p>
+      </div>
+      <div class="stile">
+        <div class="k">The counter</div>
+        <h3>Baked goods</h3>
+        <p>Fresh from-scratch baked goods, made in-house. Stop in and see what came out of
+           the oven today.</p>
+      </div>
+      <div class="stile">
+        <div class="k">To go with it</div>
+        <h3>TLC coffee</h3>
+        <p>A good cup to go with a slice, or to take with you on the way out the door.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="grid">
+      <p class="quote">"All cakes are tailored to your taste and style."</p>
+      <div class="how">
+        <h2 style="font-size:1.3rem">Ordering a cake</h2>
+        <p><b>Cakes are available for pre-order.</b> For custom and special orders, give the
+           bakery a call at <a href="tel:+14015157800" style="color:var(--brown-dk);font-weight:700">(401)&nbsp;515-7800</a>
+           or stop in at 100 Fortin Rd to place your order in person — the best cakes start
+           with a quick conversation about what you're celebrating.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <h2>Come by, or call ahead</h2>
+    <p class="lede">Custom cake, a box for the office, or just a coffee and something sweet —
+       call the bakery or stop in.</p>
+    <a class="bignum" href="tel:+14015157800">(401) 515-7800</a>
+    <div class="addr">
+      <strong style="color:#fff">Cousins R.I. Bakery, LLC</strong><br>
+      100 Fortin Rd, Kingston, RI 02881<br>
+      <a href="mailto:cousinsribakery@gmail.com">cousinsribakery@gmail.com</a>
+    </div>
+    <div class="social">
+      <a href="https://www.instagram.com/cousinsribakery">Instagram @cousinsribakery</a>
+      <a href="https://www.facebook.com/Cousins-Rhode-Island-Bakery-101711144560890">Facebook</a>
+    </div>
+  </div>
+</section>
+
+<section class="cb-offer">
+  <div class="wrap">
+    <div class="cb-kicker">A quick note from Ren</div>
+    <h2>Like it? It's yours.</h2>
+    <p>I built this preview for you — it isn't live anywhere yet, and it's hidden from Google,
+       so nobody sees it unless you send them the link. If you want it, it's <strong>$249, one
+       time</strong> — no monthly fee, no contract. You'd own it, and I'd move it onto your own
+       web address. Not for you? Just reply to my email and I'll take it down that day.</p>
+    <div class="cb-by">Curbside — a service of Atlas Inc. · Nothing here is invented; if a detail is wrong, I'll fix it.</div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div>© Cousins R.I. Bakery, LLC — Kingston, Rhode Island</div>
+    <div>Cakes &amp; baked goods from scratch · (401) 515-7800</div>
+  </div>
+</footer>
+
+</body>
+</html>
