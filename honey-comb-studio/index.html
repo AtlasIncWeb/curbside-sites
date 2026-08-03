@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Honey Comb Studio — Low-Tox, Vegan Hair Color in Cranston, RI</title>
+<meta name="description" content="An eco-conscious hair salon in Cranston, Rhode Island. Nourishing low-tox hair color with vegan, plastic-free products. Where self care meets nature in the chair. Book online or call (401) 250-2604.">
+<!-- Unpublished proposal. Must stay noindex until Honey Comb Studio owns it. -->
+<meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --ink:#241f16; --ink-2:#6d6450; --line:#ece4d5;
+    --honey:#c98a2b; --honey-dk:#a06c1c; --honey-lt:#fbf1dd;
+    --sage:#5f6e50; --sage-dk:#485438; --sage-lt:#eef1e8;
+    --cream:#fbf7ee; --paper:#fdfbf5; --white:#fff;
+  }
+  html{scroll-behavior:smooth}
+  body{font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+
+  .callbar{background:var(--sage-dk);color:#fff;position:sticky;top:0;z-index:50}
+  .callbar .wrap{display:flex;align-items:center;justify-content:space-between;
+    gap:16px;padding:12px 24px;flex-wrap:wrap}
+  .mark{font-weight:800;letter-spacing:-.01em;font-size:1.08rem;line-height:1.15}
+  .mark small{display:block;font-size:.62rem;font-weight:600;letter-spacing:.16em;
+    text-transform:uppercase;margin-top:3px;color:#c9d3ba}
+  .callbtn{display:inline-flex;align-items:center;gap:9px;background:var(--honey);color:#241a06;
+    font-weight:800;text-decoration:none;padding:11px 20px;border-radius:6px;
+    font-size:1rem;letter-spacing:-.01em;white-space:nowrap}
+  .callbtn:hover{background:var(--honey-dk);color:#fff}
+
+  .hero{background:linear-gradient(155deg,var(--sage) 0%,var(--sage-dk) 100%);
+    color:#fff;padding:64px 0 72px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:5px;
+    background:linear-gradient(90deg,var(--honey) 0 55%,var(--honey-lt) 55% 100%)}
+  .eyebrow{color:#e9c583;font-weight:700;font-size:.8rem;letter-spacing:.15em;
+    text-transform:uppercase;margin-bottom:18px}
+  h1{font-size:clamp(2.1rem,5.4vw,3.4rem);line-height:1.1;letter-spacing:-.02em;
+    font-weight:800;max-width:16ch}
+  .hero p{margin-top:20px;font-size:1.14rem;max-width:54ch;color:#e7ecdd}
+  .hero .actions{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .ghost{color:#fff;text-decoration:none;font-weight:600;border:1.5px solid #7c8b6a;
+    padding:11px 20px;border-radius:6px}
+  .ghost:hover{border-color:var(--honey);color:var(--honey-lt)}
+
+  .trust{background:var(--white);border-bottom:1px solid var(--line)}
+  .trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line);padding:0}
+  .tcell{background:var(--white);padding:26px 24px;text-align:center}
+  .tcell b{display:block;font-size:1.3rem;letter-spacing:-.02em;line-height:1.2;color:var(--ink)}
+  .tcell small{display:block;color:var(--ink-2);font-size:.86rem;margin-top:5px}
+
+  section{padding:64px 0}
+  h2{font-size:clamp(1.5rem,3vw,2.05rem);letter-spacing:-.02em;font-weight:800;margin-bottom:12px}
+  .lede{color:var(--ink-2);max-width:62ch;font-size:1.05rem}
+
+  .belief{background:var(--honey-lt);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .belief .quote{font-size:clamp(1.35rem,2.9vw,1.85rem);line-height:1.42;font-weight:800;
+    letter-spacing:-.015em;max-width:20ch;color:var(--sage-dk)}
+  .belief .grid{display:grid;grid-template-columns:1fr 1.15fr;gap:36px;align-items:center}
+  .belief .body{color:var(--ink-2);font-size:1.05rem}
+  .belief .body b{color:var(--ink)}
+
+  .svc{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+  .stile{border-radius:14px;padding:26px;border:1px solid var(--line);background:var(--white)}
+  .stile .k{font-weight:800;font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--honey-dk)}
+  .stile h3{font-size:1.18rem;margin:9px 0 8px;letter-spacing:-.015em}
+  .stile p{color:var(--ink-2);font-size:.95rem}
+  .note{margin-top:24px;font-size:.95rem;color:var(--ink-2);max-width:60ch}
+
+  .contact{background:var(--sage-dk);color:#fff}
+  .contact h2{color:#fff}
+  .contact .lede{color:#e7ecdd}
+  .bignum{display:inline-block;margin-top:22px;font-size:clamp(1.9rem,6vw,3rem);
+    font-weight:800;letter-spacing:-.02em;color:var(--honey-lt);text-decoration:none}
+  .bignum:hover{color:#fff}
+  .addr{margin-top:20px;color:#e7ecdd;font-size:1.02rem;line-height:1.9}
+  .addr a{color:var(--honey-lt);text-decoration:none}
+  .social{margin-top:18px;font-size:.97rem}
+  .social a{color:var(--honey-lt);text-decoration:none;margin-right:14px}
+
+  footer{background:#2c331f;color:#a9b299;font-size:.88rem;padding:26px 0}
+  footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+  @media (max-width:820px){.svc{grid-template-columns:1fr}}
+  @media (max-width:760px){
+    .trust .wrap{grid-template-columns:1fr}
+    .belief .grid{grid-template-columns:1fr;gap:22px}
+    section{padding:50px 0}
+    .hero{padding:48px 0 54px}
+  }
+
+  .cb-offer{background:#faf7f1;border-top:1px solid #e7e0d3;padding:60px 0;text-align:center}
+  .cb-offer .cb-kicker{color:#b0894a;font-weight:700;font-size:.74rem;letter-spacing:.15em;
+    text-transform:uppercase}
+  .cb-offer h2{font-size:clamp(1.55rem,3.4vw,2.15rem);font-weight:800;letter-spacing:-.02em;
+    margin:10px 0 14px;color:#20242b}
+  .cb-offer p{max-width:56ch;margin:0 auto;color:#495264;font-size:1.05rem;line-height:1.62}
+  .cb-offer .cb-by{margin-top:18px;font-size:.85rem;color:#8a94a3}
+</style>
+</head>
+<body>
+
+<div class="callbar">
+  <div class="wrap">
+    <div class="mark">HONEY COMB STUDIO<small>Low-tox hair color · Cranston</small></div>
+    <a class="callbtn" href="tel:+14012502604">📞 (401) 250-2604</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Cranston, Rhode Island</div>
+    <h1>Where self care meets nature in the chair.</h1>
+    <p>Honey Comb Studio is the eco-conscious solution for your hair appointment —
+       nourishing low-tox color made with vegan, plastic-free products, in a salon built
+       to be ethical and sustainable from the chair up.</p>
+    <div class="actions">
+      <a class="callbtn" href="https://staygold.glossgenius.com">Book online</a>
+      <a class="ghost" href="#services">What we offer</a>
+    </div>
+  </div>
+</header>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="tcell">
+      <b>Low-Tox Color</b>
+      <small>Nourishing, not compromising</small>
+    </div>
+    <div class="tcell">
+      <b>Vegan &amp; Plastic-Free</b>
+      <small>Products chosen on principle</small>
+    </div>
+    <div class="tcell">
+      <b>Cranston, RI</b>
+      <small>505 Atwood Ave, Suite 121</small>
+    </div>
+  </div>
+</div>
+
+<section class="belief">
+  <div class="wrap">
+    <div class="grid">
+      <p class="quote">"You don't have to compromise your health when it comes to self care."</p>
+      <div class="body">
+        <p>In their own words: <b>Honey Comb Studio offers nourishing low-tox hair color with
+           vegan, plastic-free products</b>, while creating an ethical and sustainable salon
+           experience for every client. It's the same great color — balayage, highlights, a
+           fresh all-over — done with products that are kinder to you and to the planet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <h2>In the chair</h2>
+    <p class="lede">Color is the heart of the studio — the low-tox, vegan kind. Here's the
+       shape of what a visit looks like; the full menu and current pricing live on booking.</p>
+
+    <div class="svc">
+      <div class="stile">
+        <div class="k">Color</div>
+        <h3>Low-tox &amp; vegan color</h3>
+        <p>All-over color, balayage, and highlights with nourishing, plastic-free products
+           that don't ask you to trade your health for the result.</p>
+      </div>
+      <div class="stile">
+        <div class="k">Care</div>
+        <h3>Cuts &amp; styling</h3>
+        <p>A cut and a finish to go with the color, in a calm, low-tox space — self care
+           that actually feels like care.</p>
+      </div>
+      <div class="stile">
+        <div class="k">Sustainable</div>
+        <h3>An ethical salon</h3>
+        <p>The whole experience is built to be ethical and sustainable — the eco-conscious
+           choice for your hair appointment, start to finish.</p>
+      </div>
+    </div>
+    <p class="note">Ready to book? The full service menu and pricing are on online booking,
+       and you can grab a time any hour of the day.</p>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <h2>Book your chair</h2>
+    <p class="lede">Call the studio, or book online any time. New to low-tox color? Ask —
+       we'll walk you through what changes and what doesn't (spoiler: not the result).</p>
+    <a class="bignum" href="tel:+14012502604">(401) 250-2604</a>
+    <div class="addr">
+      <strong style="color:#fff">Honey Comb Studio</strong><br>
+      505 Atwood Ave, Suite 121, Cranston, RI 02920<br>
+      <a href="mailto:honeycombpvd@gmail.com">honeycombpvd@gmail.com</a><br>
+      <a href="https://staygold.glossgenius.com">Book online →</a>
+    </div>
+    <div class="social">
+      <a href="https://www.instagram.com/honeycombstudio_ri/">Instagram @honeycombstudio_ri</a>
+    </div>
+  </div>
+</section>
+
+<section class="cb-offer">
+  <div class="wrap">
+    <div class="cb-kicker">A quick note from Ren</div>
+    <h2>Like it? It's yours.</h2>
+    <p>I built this preview for you — it isn't live anywhere yet, and it's hidden from Google,
+       so nobody sees it unless you send them the link. If you want it, it's <strong>$249, one
+       time</strong> — no monthly fee, no contract. You'd own it, and I'd move it onto your own
+       web address. Not for you? Just reply to my email and I'll take it down that day.</p>
+    <div class="cb-by">Curbside — a service of Atlas Inc. · Nothing here is invented; if a detail is wrong, I'll fix it.</div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div>© Honey Comb Studio — Cranston, Rhode Island</div>
+    <div>Low-tox, vegan hair color · (401) 250-2604</div>
+  </div>
+</footer>
+
+</body>
+</html>
